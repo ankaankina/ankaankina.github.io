@@ -1,0 +1,145 @@
+body {
+	background-color: f9f9f9
+}
+
+.wrapper {
+	background-color: white;
+	font-family: sans-serif;
+	font-size: 17px;
+	font-weight: lighter;
+	margin: 0 auto;
+	width: 1060px;
+	height: auto;
+	padding: 50 48 60 46;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(219,219,219,1);
+-moz-box-shadow: 0px 0px 3px 0px rgba(219,219,219,1);
+box-shadow: 0px 0px 3px 0px rgba(219,219,219,1);
+}
+
+.logo {
+
+}
+
+.header {
+	margin: 40 0;
+	background: linear-gradient(to bottom, #5b5b5b, #464545);
+	width: auto;
+	height: 40px;
+	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(70,69,69,0.67);
+-moz-box-shadow: inset 0px 0px 5px 0px rgba(70,69,69,0.67);
+box-shadow: inset 0px 0px 5px 0px rgba(70,69,69,0.67);
+}
+
+.header li {
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	cursor: pointer;
+	vertical-align: middle;
+	text-shadow: 1px 1px 1px black;
+}
+
+.header li a {	
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	/*padding-top: 10px;*/
+	line-height: 40px;
+}
+
+.header li a:hover {
+	height: 40px;
+	display: block;
+	vertical-align: middle;
+	background: linear-gradient(to bottom, #494949, #303030);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+
+.sidebar {
+	float: left;
+	}
+
+.sidebar li {
+	width: 240px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #c8c8c8;
+	margin-top: -1px;
+}
+
+.sidebar li a {
+	display: block;
+	text-indent: 30px;
+	color: #656363;
+	text-decoration: none;
+}
+
+.sidebar li a:hover {
+	text-indent: 40px;
+	color: #2c2c2c;
+	text-decoration: none;
+	background: #f9f9f9;
+}
+
+.content {
+	float: right;
+	width: 730px;
+	margin-bottom: 40px;
+}
+
+.content .main-img {
+	display: block;
+	height: 375px;
+	border: 1px solid #c8c8c8;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.content .main-text {
+	margin-top: 40px;
+}
+
+
+.footer {
+	clear: both;
+	margin-top: 40px;
+	display: block;
+	height: 40px;
+	background: #e1e1e1;
+}
+
+.footer li {
+	float: left;
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.footer li a {	
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	text-decoration: none;
+	color: #2c2c2c;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.footer li a:hover {
+	display: block;
+	vertical-align: middle;
+	text-decoration: underline;
+}
+
+.footer .rights {
+	float: right;
+	display: block;
+	line-height: 40px;
+	padding-right: 10px;
+}
