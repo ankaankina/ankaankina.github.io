@@ -57,23 +57,6 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 	text-decoration: underline;
 }
 
-/*.countries {
-	display: block;
-	margin-right: 30px;
-	position: relative;
-	font-size: 9px;
-	text-align: center;
-}*/
-
-/*.countries td img {
-	margin: 0px 5px;
-}
-
-.countries td a {
-	color: #128aa7;
-	text-align: center;
-}*/
-
 .countries li {
 	clear: right;
 	float: left;
@@ -88,7 +71,6 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .countries li a {
-	text-decoration: none;
 	color: #128aa7;
 }
 
