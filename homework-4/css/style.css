@@ -4,7 +4,7 @@ body {
 	align-content: center;
 	width: 100%;
 	background-image: url(../img/bg.png);
-	background-color: #0c739f;
+	background-color: #fff;
 	background-repeat: repeat-x;
 	font-family: sans-serif;
 	font-size: 14px;
@@ -15,9 +15,7 @@ body {
 	width: 1000px;
 	height: 990px;
 	background-color: white;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .logo {
@@ -27,7 +25,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 	font-size: 1px;
 }
 
-.left-side {
+.right-side {
 	float: right;
 	margin-right: 30px;
 	margin-top: 10px;
@@ -44,16 +42,12 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 	font-style: normal;
 }
 
-.contacts p {
-	list-style: none;
-}
-
-.contacts p a {
+.contacts a {
 	color: #5fa5bb;
 	text-decoration: none;
 }
 
-.contacts p a:hover {
+.contacts a:hover {
 	text-decoration: underline;
 }
 
@@ -71,11 +65,12 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .countries li a {
+	text-decoration: none;
 	color: #128aa7;
 }
 
 .main-img {
-	overflow: hidden;
+	clear: both;
 	width: 100%;
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
@@ -92,9 +87,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 	border-bottom: 1px solid #000000;
 	z-index: 1;
 	font-weight: bolder;
-	-webkit-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.5);
-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.5);
+	box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.5);
 }
 
 .main-menu ul {
@@ -157,10 +150,7 @@ box-shadow: 0px 2px 5px 0px rgba(48,48,48,1);
 	height: 550px;
 	display: flex;
 	overflow: hidden;
-	z-index: 0;
-	-webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
 }
 
 .info-left {
@@ -176,7 +166,7 @@ box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
 
 .info-left .header {
 	display: inline-block;
-	width: 210px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -196,10 +186,7 @@ box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
 }
 
 .info-right {
-	align-self: flex-end;
 	width: 21%;
-	height: 100%;
-	margin: 0 auto;
 	background: #edeef0;
 	border-left: 1px solid #c7cacf;
 	padding: 10px 15px 20px 15px;
@@ -207,9 +194,8 @@ box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
 
 .info-right .header {
 	display: inline-block;
-	width: 210px;
+	width: 100%;
 	text-align: center;
-	padding-top: 30px;
 }
 
 .footer {
