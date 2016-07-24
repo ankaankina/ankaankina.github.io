@@ -1,0 +1,142 @@
+html {
+	background: url(../img/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue Light';
+	src: url('../fonts/HelveticaNeueLTStd Lt.woff') format('woff');
+	src: url('../fonts/HelveticaNeueLTStd Lt.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0px;
+	font-family: 'Helvetica Neue Light', Tahoma, sans-serif;
+	font-size: 14px;
+	width: 100vw;
+	height: 100vh;
+	min-width: 730px; 
+	min-height: 650px;
+	}
+
+.header {
+	display: inline-flex;
+	justify-content: flex-end;
+	height: 35px;
+	width: 100vw;
+	align-items: center;
+	line-height: 35px;
+	background-color: #074f8f;
+}
+
+.head-menu {
+	margin: 0px;
+
+}
+
+.head-menu li {
+	display: inline-block;
+	width: 70px;
+}
+
+.head-menu li:first-child {
+	width: 80px;
+}
+
+.head-menu li:last-child {
+	border-right: 1px solid #56a2dc;
+}
+
+.head-menu li a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: #60b5ed;
+}
+
+.head-menu li a:hover {
+	display: block;
+	color: white;
+	background: #4eabda;
+}
+
+.sign-up-button a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	width: 190px;
+	text-align: center;
+	background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+	border: 1px solid linear-gradient(to bottom, #64a8e3, #4299d2);
+	border-top: none;
+	margin-right: 10px;
+}
+
+.rules-button a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 160px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	height: 95vh;
+}
+
+.reg-block {
+	width: 450px;
+	height: 500px;
+	min-width: 386px;
+	background-color: rgba(0, 0, 0, 0.63);
+	margin: auto;
+	text-align: center;
+}
+
+.reg-block .header-name {
+	font-size: 130%;
+	color: white;
+	line-height: 3rem;
+	font-weight: lighter;
+	border-bottom: 1px solid #c6cebf;
+}
+
+.fb-button {
+	margin-top: 30px;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 250px;
+	height: 35px;	
+	background: linear-gradient(to bottom, #3d5794, #2f4171);
+	border-radius: 4px;
+	border-top: 1px solid #768abc;
+	border-bottom: 1px solid #344066;
+	color: white;
+	cursor: pointer;
+}
+
+.fa {
+	width: 35px;
+	height: 35px;
+}
+
+.fb-icon {
+	border-right: 1px solid #1f3c76;
+	align-self: center;
+}
+
+.log-in {
+	width: 215px;
+	height: 35px;
+	line-height: 35px;
+	border-left: 1px solid #4d68ab;
+	width: 240px;
+}
