@@ -6,12 +6,6 @@
 
 }
 
-table {
-	display: table;
-	border: 10px solid transparent;
-	background: transparent;	
-}
-
 .row-1,
 .row-4,
 .row-5 {
