@@ -1,0 +1,70 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+
+}
+
+table {
+	display: table;
+	border: 10px solid transparent;
+	background: transparent;	
+}
+
+.row-1,
+.row-4,
+.row-5 {
+	height: 50px;
+}
+
+.row-2,
+.row-3 {
+	height: 100px;
+}
+
+.row-6,
+.row-7 {
+	height: 35px;
+}
+
+td {
+	margin: 10px;
+	background-color: white;
+	border: 5px solid black;	
+}
+
+.td-1,
+.td-2,
+.td-3 {
+	width: 50px;
+}
+
+.td-2-6 {
+	width: 110px;
+}
+
+.td-4 {
+	width: 100px;
+}
+
+.td-5,
+.td-6 {
+	width: 70px;
+}
+
+.yellow {
+	background: #fced54;
+}
+
+.red {
+	background: #f9492a;
+}
+
+.blue {
+	background: #044481;
+}
+
+.black {
+	background: #121a17;
+}
