@@ -87,13 +87,13 @@ body {
 .wrapper {
 	display: flex;
 	align-items: center;
-	vertical-align: middle;
+	justify-content: center;
 	height: 95vh;
 }
 
 .reg-block {
 	width: 450px;
-	height: 500px;
+	height: 590px;
 	min-width: 386px;
 	background-color: rgba(0, 0, 0, 0.63);
 	margin: auto;
@@ -101,10 +101,10 @@ body {
 }
 
 .reg-block .header-name {
-	font-size: 130%;
+	font-size: 140%;
 	color: white;
 	line-height: 3rem;
-	font-weight: lighter;
+	font-weight: 200;
 	border-bottom: 1px solid #c6cebf;
 }
 
@@ -121,6 +121,7 @@ body {
 	border-bottom: 1px solid #344066;
 	color: white;
 	cursor: pointer;
+	font-size: 110%;
 }
 
 .fa {
@@ -128,9 +129,12 @@ body {
 	height: 35px;
 }
 
-.fb-icon {
+.fb-button i {
 	border-right: 1px solid #1f3c76;
 	align-self: center;
+	display: block;
+	line-height: 35px;
+	font-size: 130%;
 }
 
 .log-in {
@@ -139,4 +143,94 @@ body {
 	line-height: 35px;
 	border-left: 1px solid #4d68ab;
 	width: 240px;
+}
+
+.ou {
+	overflow: hidden;
+	display: block;
+	width: 250px;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 105%;
+	color: #999;
+}
+
+.ou:before,
+.ou:after {
+	content: "";
+	display: inline-block;
+	width: 250px;
+	height: 2px;
+	background: linear-gradient(to bottom, #999, #000);
+	vertical-align: middle;
+	position: relative;
+}
+
+.ou:before {
+	margin-left: -100%;
+	left: -6px;
+}
+
+.ou:after {
+	margin-right: -100%;
+	right: -6px;
+}
+
+#f-name,
+#l-name,
+#email,
+#password {
+	box-sizing: border-box;
+	width: 250px;
+	height: 35px;
+	color: #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	background: #0f0f0f !important;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #484948;
+	margin: 10px auto;
+	text-indent: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	background: radial-gradient(#1b5288, #1e4b76) !important; /*rgb(27,82,136)*/
+	color: #ccc;
+	border-bottom: 1px solid #689bcd;
+	box-shadow: 0px 0px 4px 3px rgba(104,155,204,0.67);
+} 
+
+label {
+	display: block;
+	color: #ccc;
+	margin: 10px auto;
+}
+
+#submit {
+	cursor: pointer;
+	text-align: center;
+	color: white;
+	height: 35px;
+	line-height: 30px;
+	width: 150px;
+	background: linear-gradient(to bottom, #50aedb, #2e7ac4);
+	border-radius: 4px;
+	border-top: 1px solid #6bb8e7;
+	border-right: 1px solid #55a1dc;
+	border-left: 1px solid #55a1dc;
+	border-bottom: 1px solid #3686ca;
+	margin: 10px auto;
+}
+
+.warning {
+	color: #c5c5c4;
+	font-size: 80%;
+	width: 250px;
+	margin: 10px auto;
 }
