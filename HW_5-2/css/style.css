@@ -6,6 +6,10 @@
 
 }
 
+table {
+	border: none;
+}
+
 .row-1,
 .row-4,
 .row-5 {
