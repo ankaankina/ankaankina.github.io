@@ -1,6 +1,8 @@
 html {
 	background: url(../img/background.jpg) no-repeat center center fixed;
 	background-size: cover;
+	width: 100%;
+	height: 100%;
 }
 
 @font-face {
@@ -99,7 +101,6 @@ body {
 
 .reg-block {
 	width: 450px;
-	min-width: 386px;
 	height: 590px;
 	background-color: rgba(0, 0, 0, 0.63);
 	text-align: center;
