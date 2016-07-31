@@ -1,8 +1,15 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	background-color: white;
 	font-family: Arial;
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .wrapper {
@@ -16,6 +23,7 @@ header.top {
 	justify-content: space-between;
 	align-items: center;
 	height: 27px;
+	width: 100%;
 	margin-top: 17px;
 	margin-bottom: 11px;
 }
@@ -154,6 +162,10 @@ a.restore:visited {
 	width: 100%;
 	height: 237px;
 	margin-bottom: 5px;
+}
+
+.main-img a {
+	text-decoration: none;
 }
 
 .main-img h1 {
@@ -332,6 +344,14 @@ ul.main-menu {
 box-shadow: 1px 1px 5px 0px rgba(153,153,153,1);
 }
 
+.car select,
+.discs select {
+	border-bottom: 0px;
+	border-right: 0px;
+	border-top: 2px solid #b0b0b0;
+	border-left:  2px solid #b0b0b0;
+}
+
 .car {
 	width: 414px;
 }
@@ -374,7 +394,7 @@ box-shadow: 1px 1px 5px 0px rgba(153,153,153,1);
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin: 6px 15px 0px 0px;
+	margin: 10px 15px 0px 4px;
 	font-family: "Lucida Sans Unicode"
 }
 
@@ -389,10 +409,16 @@ box-shadow: 1px 1px 5px 0px rgba(153,153,153,1);
 .tires .content .block1 {
 	text-align: right;
 	width: 55px;
+	margin-top: 3px;
+	margin-left: 8px;
 }
 
 .tires .content .block2 {
 	margin-left: 7px;
+}
+
+.tires select {
+	box-shadow: inset 0px 0px 4px #b0b0b0;
 }
 
 .tires .r1 {
@@ -411,20 +437,27 @@ box-shadow: 1px 1px 5px 0px rgba(153,153,153,1);
 .tires .R {
 	width: 45px;
 	height: 18px;
+	margin-bottom: 5px;
 }
 
 .tires label {
 	font-size: 12px;
 	display: block;
-	height: 14px;
+}
+
+.tires input[type="checkbox"] {
+	height: 12px;
+	margin: 1px 0px;
+	border-radius: 0px;
 }
 
 .tires .season {
-	width: 55px;
+	width: 65px;
+	margin-right: 0;
 }
 
 .tires input[type="submit"] {
-	margin-top: 4px;
+	margin-top: -5px;
 	margin-right: 12px;
 }
 
@@ -433,7 +466,7 @@ box-shadow: 1px 1px 5px 0px rgba(153,153,153,1);
 }
 
 .discs {
-	font-family: "Lucida Sans Unicode"
+	font-family: "Lucida Sans Unicode";
 	line-height: 11px;
 }
 
@@ -445,12 +478,14 @@ box-shadow: 1px 1px 5px 0px rgba(153,153,153,1);
 
 .discs .block2 {
 	width: 60px;
+	margin-left: 5px;
+	margin-top: 3px;
 	margin-right: 10px;
 	float: left;
 }
 
 .discs .block2 select {
-	margin-bottom: 10px;
+	margin-bottom: 13px;
 }
 
 .discs .block2 .disc-size,
@@ -477,12 +512,17 @@ box-shadow: 1px 1px 5px 0px rgba(153,153,153,1);
 .discs .block3 p {
 	margin: 0;
 	font-family: "Lucida Sans Unicode"
-	line-height: 11px;
+	line-height: 8px;
 }
 
 .discs .block3 span {
 	font-size: 8px;
 	line-height: 5px;
+}
+
+.discs input[type="submit"] {
+	margin-top: -3px;
+	margin-right: 15px;
 }
 
 main {
@@ -553,7 +593,7 @@ aside ul {
 aside .anchors li {
 	list-style: none;
 	font-size: 13px;
-	margin-bottom: 13px;
+	margin-bottom: 11px;
 	margin-left: 37px;
 }
 
@@ -565,6 +605,7 @@ aside a {
 	color: #79878d;
 	size: 13px;
 	text-decoration: none;
+	line-height: 15px;
 }
 
 aside a:before {
