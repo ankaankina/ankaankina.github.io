@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body,
+.wrapper {
+	width: 100%;
+	height: 100%;
+	font-family: 'League Gothic', Arial;
+}
+
+html {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+}
+
+
+header {
+	width: 960px;
+	height: 40px;
+	padding-top: 70px;
+	margin: 0 auto;
+	text-shadow: 0 2px 2px #a7969a;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-link {
+	text-decoration: none;
+	color: white;
+}
+
+.logo {
+	font-size: 48px;
+	display: flex;
+}
+
+.logo--violet {
+	color: #5e426b;
+	text-shadow: none;
+}
+
+.head-menu {
+	width: 700px;
+}
+
+.head-menu-items {
+	font-size: 24px;
+	float: left;
+	margin-left: 7%;
+	color: white;
+}
+
+.head-links {
+	color: white;
+	text-decoration: none;
+}
+
+.head-links:hover {
+	box-sizing: border-box;
+	border-bottom: 2px solid #edbfff;
+}
+
+.slider {
+	clear: both;
+	width: 100%;
+	height: 400px;
+	margin-top: 170px;
+	margin-bottom: 93px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.slider-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.slider-block {
+	width: 55%;
+	min-height: 190px;
+	margin-top: 90px;
+	padding-left: 10px;
+	display: inline-block;
+	float: left;
+}
+
+.slider-h1 {
+	font-size: 60px;
+	color: white;
+	text-shadow: 0px 1px 2px #000;
+}
+
+.slider-h2 {
+	font-size: 32px;
+	color: #edbfff;
+	text-shadow: 0px 1px 2px #000;
+}
+
+.slider-text {
+	font-size: 18px;
+	color: white;
+	line-height: 24px;
+	text-shadow: 0px 1px 1px #000;
+}
+
+.slider-img {
+	width: 274px;
+	height: 435px;
+	margin-top: -15px;
+	margin-right: 8%;
+	background: url(../img/iphone-2.png) no-repeat;
+	float: right;
+}
+
+.slider-list {
+	clear: both;
+	text-align: right;
+	margin-right: 15%;
+	margin-top: 93px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+
+.slider-button {
+	display: inline-block;
+	margin-top: 93px;
+}
+
+.slider-button:before {
+	content: "";
+	display: inline-block;
+	background-image: url(../img/radio-button.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+input[type="radio"]:checked + .slider-button:before {
+	content: "";
+	background-position: -18px 0;
+}
+
+.columns {
+	width: 100%;
+	margin-top: 168px;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(#745083, #322539);
+	border-top: 1px solid #33253a;
+	border-bottom: 2px solid #1d2f37, #0d151b;
+	box-sizing: border-box;
+}
+
+.columns-block {
+	padding-top: 70px;
+	padding-bottom: 60px;
+	width: 960px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.column1,
+.column2,
+.column3 {
+	width: 28%;
+	color: white;
+	display: inline-block;
+}
+
+.column1:before,
+.column2:before,
+.column3:before {
+	content: "";
+	display: inline-block;
+	background: url(../img/icons.png) no-repeat;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	margin-top: 10px;
+}
+
+.column1:before {
+	background-position: 0px -100px;
+}
+
+.column2:before {
+	background-position: -28px -100px;
+	width: 33px;
+}
+
+.column3:before {
+	background-position: -61px -100px;
+}
+
+.column-h {
+	font-size: 30px;
+	text-shadow: 1px 1px 2px #000;
+	font-weight: 300;
+	padding-left: 50px;
+}
+
+.column-text {
+	font-family: "Open Sans";
+	font-weight: 200;
+	margin-top: 15px;
+	line-height: 21px;
+	text-shadow: 1px 1px 1px #000;
+	padding-left: 50px;
+}
+
+.column-link {
+	display: block;
+	font-size: 18px;
+	text-align: right;
+	margin-top: 25px;
+	cursor: pointer;
+	font-weight: 200;
+	text-shadow: 2px 1px 1px #000;
+}
+
+.column-link:hover {
+	text-shadow: 0 0 3px white;
+}
+
+.blog {
+	width: 100%;
+	padding-top: 100px;
+	background-color: #f9f9f9;
+	display: flex;
+	justify-content: center;
+}
+
+.blog-container {
+	width: 100%;
+	height: 100%;
+	max-width: 960px;
+	display: flex;
+	justify-content: space-around;
+	padding-right: 25px;
+}
+
+.blog-post-radio {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	box-sizing: border-box;
+}
+
+.blog-post {
+	width: 100%;
+	padding: 30px 40px;
+	background-color: #fff;
+	margin-left: 25px;
+	border: 2px solid #f6f6f6;
+	border-top: none;
+	box-sizing: border-box;
+	margin-bottom: 23px;
+}
+
+.blog-link {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.blog-h {
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	font-size: 30px;
+	font-weight: 100;
+	color: #454545;
+	text-shadow: -1px -1px 1px #d8d8d8;
+}
+
+.blog-h-img:before {
+	content: "";
+	display: inline-block;
+	background: url(../img/icons.png) -48px -48px no-repeat;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	margin-left: -64px;
+	margin-top: -15px;
+}
+
+.pink {
+	margin-left: 5px;
+	height: 30px;
+	color: #edbfff;
+	text-shadow: none;
+	margin-bottom: 15px;
+}
+
+.blog-text {
+	width: 100%;
+	height: 165px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 400;
+	color: #454545;
+	line-height: 24px;
+	text-align: justify;
+	overflow: hidden;
+	text-overflow: clip;
+}
+
+.blog-button {
+	text-align: center;
+	height: 20px;
+	width: 20px;
+
+}
+
+ .blog-button:before {
+	content: "";
+	background-image: url(../img/radio-button.png);
+	background-position: 0 -18px 
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+input[type="radio"]:checked + .blog-button:before {
+	background-position: -23px -18px;
+} 
+
+.blog-updates {
+	width: 48%;
+	margin-left: 3%;
+	padding: 30px 10px 0px 0px;
+	display: flex;
+	flex-flow: column;
+}
+
+.update {
+	font-family: "Open Sans";
+	font-size: 16px;
+	display: inline-block;
+	position: relative;
+	padding-left: 65px;
+	margin-top: 23px;
+	line-height: 24px;
+}
+
+.update:before {
+	content: "";
+	background-image: url(../img/icons.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	margin-left: -65px;
+	display: block;
+	vertical-align: middle;
+}
+
+.update-2:before {
+	background-position: 0 -50px;
+}
+
+.update-3:before {
+	background-position: -49px 0;
+}
+
+.update-h {
+	font-weight: 900;
+}
