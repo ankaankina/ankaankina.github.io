@@ -9,6 +9,32 @@
     font-style: normal;
 }
 
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans.eot');
+	src: local('Open Sans'), local('OpenSans'),
+		url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans.woff2') format('woff2'),
+		url('../fonts/OpenSans.woff') format('woff'),
+		url('../fonts/OpenSans.ttf') format('truetype'),
+		url('../fonts/OpenSans.svg#OpenSans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('hinted-OpenSans-Extrabold.eot');
+	src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'),
+		url('../fonts/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Extrabold.woff2') format('woff2'),
+		url('../fonts/OpenSans-Extrabold.woff') format('woff'),
+		url('../fonts/OpenSans-Extrabold.ttf') format('truetype'),
+		url('../fonts/OpenSans-Extrabold.svg#OpenSans-Extrabold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
 html {
 	background: url(../img/bg.jpg) no-repeat center 0 fixed;
 }
@@ -19,12 +45,13 @@ body,
 	width: 100%;
 	height: 100%;
 	font-family: 'League Gothic', Arial;
+	box-sizing: border-box;
 	
 }
 
 header {
-	width: 960px;
-	height: 40px;
+	width: 100%;
+	max-width: 960px;
 	padding-top: 70px;
 	margin: 0 auto;
 	text-shadow: 0 2px 2px #a7969a;
@@ -56,14 +83,23 @@ header {
 	  -webkit-text-shadow: none;
 }
 
+.navi-link-dropdown {
+	display: none;
+}
+
 .head-menu {
-	width: 700px;
+	width: 100%;
+	text-align: right;
+}
+
+.menu-head {
+	display: none;
 }
 
 .head-menu-items {
 	font-size: 24px;
 	float: left;
-	margin-left: 7%;
+	margin-left: 8%;
 	color: white;
 }
 
@@ -79,9 +115,11 @@ header {
 
 .slider {
 	clear: both;
+	display: flex;
+	justify-content: center;
 	width: 100%;
 	height: 400px;
-	margin-top: 170px;
+	margin-top: 160px;
 	margin-bottom: 93px;
 	background: rgba(0, 0, 0, 0.2);
 }
@@ -263,7 +301,6 @@ input[type="radio"]:checked + .slider-button:before {
 	display: block;
 	font-size: 18px;
 	text-align: right;
-	margin-top: 20px;
 	cursor: pointer;
 	font-weight: 200;
 	text-shadow: 2px 1px 1px #000;
@@ -284,7 +321,7 @@ input[type="radio"]:checked + .slider-button:before {
 .blog {
 	width: 100%;
 	padding-top: 100px;
-	padding-bottom: 70px;
+	padding-bottom: 55px;
 	background-color: #f9f9f9;
 	display: flex;
 	justify-content: center;
@@ -298,11 +335,11 @@ input[type="radio"]:checked + .slider-button:before {
 	max-width: 960px;
 	display: flex;
 	justify-content: space-between;
-	padding-right: 25px;
+	/*padding-right: 35px;*/
 }
 
 .blog-post-radio {
-	width: 40%;
+	width: 48%;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -360,12 +397,12 @@ input[type="radio"]:checked + .slider-button:before {
 	  -moz-text-shadow: none;
 	  -ms-text-shadow: none;
 	  -webkit-text-shadow: none;
-	margin-bottom: 15px;
 }
 
 .main-text--blog {
 	height: 165px;
 	color: #454545;
+	margin-top: 15px;
 }
 
 .blog-button {
@@ -438,6 +475,7 @@ input[type="radio"]:checked + .blog-button:before {
 
 .column-link--update {
 	color: #454545;
+	margin-top: 20px;
 	text-shadow: none;
 	  -o-text-shadow: none;
 	  -moz-text-shadow: none;
@@ -467,7 +505,7 @@ input[type="radio"]:checked + .blog-button:before {
 	max-width: 960px;
 	display: flex;
 	justify-content: space-around;
-	padding: 25px 9% 30px 9%;
+	padding: 20px 4% 35px 4%;
 	padding-top: 25px;
 	padding-bottom: 30px;
 	box-sizing: border-box;
@@ -514,7 +552,7 @@ input[type="radio"]:checked + .blog-button:before {
 }
 
 .blog--pingbuller {
-	padding-bottom: 100px;
+	padding-bottom: 90px;
 	border-top: 1px solid #e6e6e6;
 	background-color: #ececec;
 	box-shadow: 0 3px 3px #504f57;
@@ -535,6 +573,10 @@ input[type="radio"]:checked + .blog-button:before {
 	width: 30%;
 	height: 200px;
 	overflow: hidden;
+}
+
+.pingbuller-column--768px {
+	display: none;
 }
 
 .logo-link--blog {
@@ -564,6 +606,7 @@ input[type="radio"]:checked + .blog-button:before {
 
 .main-text--pingbuller {
 	color: #787878;
+	text-align: left;
 	text-shadow: 1px 1px 1px #fff;
 	  -o-text-shadow: 1px 1px 1px #fff;
 	  -moz-text-shadow: 1px 1px 1px #fff;
@@ -591,10 +634,11 @@ footer {
 .head-menu--footer {
 	display: flex;
 	margin: auto 0;
-	font-size: 20px;
+	width: 70%;
 }
 
 .head-menu-items--footer {
+	font-size: 20px;
 	margin-left: 0;
 	margin-right: 5%;
 	filter: none;
@@ -616,5 +660,5 @@ footer {
 }
 
 .bold {
-	font-weight: 900;
+	font-weight: 800;
 }

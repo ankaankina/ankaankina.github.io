@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/media-queries.css" rel="stylesheet" type="text/css">
 	<link href="resource://firefox.abs.avira.com/css/content/content.css?1470850215447" type="text/css" rel="stylesheet">
 	<link href="resource://firefox.abs.avira.com/css/content/search.css?1470850215448" type="text/css" rel="stylesheet">
 	<title>Pingbuller</title>
@@ -21,13 +22,27 @@
 				</p>
 			</a>
 
-			<ul class="head-menu">
-				<li class="head-menu-items"><a class="head-links" href="">HOME</a></li>
-				<li class="head-menu-items"><a class="head-links" href="">ABOUT</a></li>
-				<li class="head-menu-items"><a class="head-links" href="">BLOG</a></li>
-				<li class="head-menu-items"><a class="head-links" href="">PRODUCTS</a></li>
-				<li class="head-menu-items"><a class="head-links" href="">LOREM IPSUM</a></li>
-				<li class="head-menu-items"><a class="head-links" href="">DOLOR SIT AMET</a></li>
+			<ul class="head-menu head-menu--desktop">
+				<li class="head-menu-items menu-items--head"><a class="head-links links-head" href="">HOME</a></li>
+				<li class="head-menu-items menu-items--head "><a class="head-links links-head menu-links" href="">ABOUT</a></li>
+				<li class="head-menu-items menu-items--head"><a class="head-links links-head menu-links" href="">BLOG</a></li>
+				<li class="head-menu-items menu-items--head"><a class="head-links links-head menu-links" href="">PRODUCTS</a></li>
+				<li class="head-menu-items menu-items--head"><a class="head-links links-head menu-links" href="">LOREM IPSUM</a></li>
+				<li class="head-menu-items menu-items--head"><a class="head-links links-head menu-links" href="">DOLOR SIT AMET</a></li>
+			</ul>
+			
+			<ul class="head-menu--mobile">
+				<li class="head-menu--button">
+					<a class="navi-link-dropdown href="">MENU</a>
+					<ul class="head-menu menu-head">
+						<li class="head-menu-items menu-items--head"><a class="head-links links-head" href="">HOME</a></li>
+						<li class="head-menu-items menu-items--head "><a class="head-links links-head menu-links" href="">ABOUT</a></li>
+						<li class="head-menu-items menu-items--head"><a class="head-links links-head menu-links" href="">BLOG</a></li>
+						<li class="head-menu-items menu-items--head"><a class="head-links links-head menu-links" href="">PRODUCTS</a></li>
+						<li class="head-menu-items menu-items--head"><a class="head-links links-head menu-links" href="">LOREM IPSUM</a></li>
+						<li class="head-menu-items menu-items--head"><a class="head-links links-head menu-links" href="">DOLOR SIT AMET</a></li>
+					</ul>
+				</li>
 			</ul>
 		</header>
 
@@ -150,7 +165,7 @@
 
 	<section class="blog blog--pingbuller">
 		<div class="pingbuller">
-			<div class="pingbuller-column">
+			<div class="pingbuller-column pingbuller-column--desktop">
 				<a class="logo-link logo-link--blog" href="">
 					<p class="logo logo--blog">
 						PINGBULL<span class="logo--grey">ER</span>
@@ -161,6 +176,14 @@
 					Copyright 2013, Pingbuller AS
 				</p>
 
+				<p class="main-text main-text--pingbuller">
+					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+				</p>
+			</div>
+
+			<div class="pingbuller-column pingbuller-column--768px">
+				<div class="blog-h">NEWS CATEGORIES</div>
+				
 				<p class="main-text main-text--pingbuller">
 					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
 				</p>
