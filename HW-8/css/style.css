@@ -83,17 +83,9 @@ header {
 	  -webkit-text-shadow: none;
 }
 
-.navi-link-dropdown {
-	display: none;
-}
-
 .head-menu {
 	width: 100%;
 	text-align: right;
-}
-
-.menu-head {
-	display: none;
 }
 
 .head-menu-items {
@@ -583,7 +575,7 @@ input[type="radio"]:checked + .blog-button:before {
 	color: #454545;
 	text-shadow: -1px 1px 1px #fff;
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 }
 
 .logo--grey {
