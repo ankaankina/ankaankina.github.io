@@ -83,6 +83,14 @@ header {
 	  -webkit-text-shadow: none;
 }
 
+#toggle {
+	display: none;
+}
+
+.nav-button {
+	display: none;
+}
+
 .head-menu {
 	width: 100%;
 	text-align: right;

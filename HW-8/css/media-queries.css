@@ -139,88 +139,82 @@
 		display: flex;
 		flex-flow: column;
 		justify-content: center;
+		padding-left: 0;
 	}
 
 	.logo {
 		margin-bottom: 15px;
 	}
 
-	.menu-head {
-		width: 245px;
+	.nav-button {
 		display: block;
 		position: absolute;
-		z-index: 100;
-		border-radius: 0 0 5px 5px;
-		margin-top: 50px;
-		text-shadow: none;
-	}
-
-	.menu-items--head {
-		float: none;
+		top: 130px;
+		height: 45px;
 		line-height: 45px;
-		display: none;
 		text-align: center;
-		width: 245px;
-		height: 45px;
-		box-sizing: border-box;
-		margin-right: 0;
-	}
-
-	.active {
-		text-align: center;
-		width: 245px;
-		height: 45px;
-		display: block;
-		line-height: 45px;
-	}
-
-	.active-link {
-		border-bottom: 2px solid #edbfff;
-		width: 245px;
-		height: 45px;
-		line-height: 45px;
-	}
-
-	.active-link:hover {
-		display: block;
 		cursor: pointer;
-		box-sizing: border-box;
+		z-index: 100;
+		border-bottom: 2px solid #edbfff;
+		font-size: 24px;
+		font-family: "League Gothic";
+		font-weight: 200;
+		color: #fff;
+	}
+
+	.menu-head {
+		position: absolute;
+		top: 130px;
+		z-index: 10;
+		width: 245px;
+		text-shadow: none;
+		float: none;
+		display: flex;
+		flex-flow: column;
+		background-color: rgba(54, 41, 62, 0.5);
+	}
+
+	.head-links--head {
+		height: 0;
+		line-height: 0;
+		display: block;
+		overflow: hidden;
+		border-top: rgba(91, 67, 102, 0.5);
+		border-bottom: rgba(53, 39, 61, 0.5);
+		-moz-transition: 1s;
+		 -ms-transition: 1s;
+		  -o-transition: 1s;
+		     transition: 1s;
+	}
+
+	.head-links--head:hover {
+		border-bottom: 2px solid #edbfff;
+		background: rgba(36, 28, 42, 0.5);
+	}
+
+	#toggle:checked ~ .menu-head {
+		z-index: 101;
+		width: 245px;
+		text-align: center;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	/*#toggle:checked ~ .nav-button {
+		width: 245px;
 		height: 45px;
 		line-height: 45px;
-		width: 245px;
-	}
-
-	.active:hover {
 		border-radius: 5px 5px 0 0;
+		background-color: rgba(54, 41, 62, 0.5);
+	}*/
+
+	#toggle:checked ~ .head-links--head {
+		line-height: 45px;
+		height: 45px;
 	}
 
-	.menu-head:hover .menu-items--head  {
-		border-bottom: 1px solid rgba(53, 39, 61, 0.3);
-		display: block;
-	}
-
-	.menu-head:hover {
-		border-top: 1px solid rgba(91, 67, 102, 0.5);
-		border-bottom: 1px solid rgba(5, 17, 22, 0.5);
-		border-radius: 5px;
-		background: rgba(54, 41, 62, 0.5);
-		position: absolute;
-		top: 11%;
-	}
-
-	.menu-head:hover .menu-items--head:last-child {
-		border-bottom: none;
-		border-radius: 0 0 5px 5px;
-	}
-
-	.menu-links:hover {
-		border-bottom: none;
-	}
-
-	.menu-items--head:hover {
-		display: block;
+	#toggle:checked ~ .head-links--head:hover {
 		background: rgba(36, 28, 42, 0.5);
-		border-bottom: 2px solid #edbfff;
 	}
 
 	.slider {
