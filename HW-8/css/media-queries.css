@@ -16,11 +16,16 @@
 	header {
 		display: block;
 		margin: 0 auto;
-		padding-left: 20px;
+		margin-right: 0;
 	}
 
 	.logo {
+		margin-left: 20px;
 		margin-bottom: 40px;
+	}
+
+	.menu-head {
+		margin-left: 20px;
 	}
 
 	.head-menu-items {
@@ -136,14 +141,25 @@
 
 	header {
 		max-width: 480px;
+		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-flow: column;
 		justify-content: center;
 		padding-left: 0;
+		position: relative;
+		margin: 0 auto;
 	}
 
 	.logo {
 		margin-bottom: 15px;
+		margin-left: 0;
+	}
+
+	form {
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 	.nav-button {
@@ -155,36 +171,49 @@
 		text-align: center;
 		cursor: pointer;
 		z-index: 100;
-		border-bottom: 2px solid #edbfff;
+		text-decoration: underline;
 		font-size: 24px;
 		font-family: "League Gothic";
 		font-weight: 200;
 		color: #fff;
+		text-shadow: none;
+	}
+	
+	nav {
+		top: 130px;
+		left: 0;
+		right: 0;
+		max-width: 480px;
+		position: absolute;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
 	}
 
 	.menu-head {
-		position: absolute;
+		margin: 0 auto;
 		top: 130px;
-		z-index: 10;
 		width: 245px;
+		z-index: 10;
 		text-shadow: none;
 		float: none;
-		display: flex;
-		flex-flow: column;
 		background-color: rgba(54, 41, 62, 0.5);
+		border-radius: 5px;
+	}
+
+	.head-items--head {
+		margin-right: 0;
+		width: 245px;
+		float: none;
 	}
 
 	.head-links--head {
-		height: 0;
-		line-height: 0;
+		height: 0px;
+		line-height: 0px;
+		width: 245px;
 		display: block;
 		overflow: hidden;
-		border-top: rgba(91, 67, 102, 0.5);
-		border-bottom: rgba(53, 39, 61, 0.5);
-		-moz-transition: 1s;
-		 -ms-transition: 1s;
-		  -o-transition: 1s;
-		     transition: 1s;
+		text-align: center;
 	}
 
 	.head-links--head:hover {
@@ -192,29 +221,34 @@
 		background: rgba(36, 28, 42, 0.5);
 	}
 
-	#toggle:checked ~ .menu-head {
+	#toggle:checked ~ nav .menu-head {
 		z-index: 101;
 		width: 245px;
-		text-align: center;
 		cursor: pointer;
 		border-radius: 5px;
 	}
-
-	/*#toggle:checked ~ .nav-button {
+	
+	#toggle:checked ~ nav .menu-head .head-links--head {
 		width: 245px;
-		height: 45px;
-		line-height: 45px;
-		border-radius: 5px 5px 0 0;
-		background-color: rgba(54, 41, 62, 0.5);
-	}*/
-
-	#toggle:checked ~ .head-links--head {
 		line-height: 45px;
 		height: 45px;
+		border-top: rgba(91, 67, 102, 0.5);
+		border-bottom: rgba(53, 39, 61, 0.5);
 	}
 
-	#toggle:checked ~ .head-links--head:hover {
+	#toggle:checked ~ nav .menu-head .head-links--head:hover {
+		width: 245px;
 		background: rgba(36, 28, 42, 0.5);
+	}
+
+	.first-link:hover {
+		background: transparent;
+		border-radius: 5px 5px 0 0;
+		border-bottom: none;
+	}
+
+	.last-link:hover {
+		border-radius: 0 0 5px 5px;
 	}
 
 	.slider {
@@ -324,6 +358,7 @@
 	.main-text--pingbuller {
 		overflow: hidden;
 		text-overflow: clip;
+		padding-right: 5%;
 	}
 
 	.blog--pingbuller {
@@ -380,6 +415,8 @@
 	.columns {
 		margin-top: 70px;
 	}
+
+
 
 	.head-menu--footer {
 		display: none;

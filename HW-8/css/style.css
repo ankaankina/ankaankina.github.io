@@ -83,6 +83,10 @@ header {
 	  -webkit-text-shadow: none;
 }
 
+nav {
+	width: 100%;
+}
+
 #toggle {
 	display: none;
 }
