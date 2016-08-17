@@ -1,5 +1,5 @@
 
-/******************************760px*************************/
+/******************************768px*************************/
 @media screen and (max-width: 960px) {
 	header,
 	.slider-container,
@@ -15,17 +15,20 @@
 
 	header {
 		display: block;
+		max-width: 768px;
 		margin: 0 auto;
-		margin-right: 0;
 	}
+
 
 	.logo {
 		margin-left: 20px;
 		margin-bottom: 40px;
+		padding-left: 10px;
 	}
 
 	.menu-head {
 		margin-left: 20px;
+		padding-left: 10px;
 	}
 
 	.head-menu-items {
@@ -156,21 +159,16 @@
 		margin-left: 0;
 	}
 
-	form {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
 	.nav-button {
-		display: block;
-		position: absolute;
+		display: block;		
+		margin: 0 auto;
 		top: 130px;
 		height: 45px;
 		line-height: 45px;
+		width: 245px;
 		text-align: center;
 		cursor: pointer;
-		z-index: 100;
+		z-index: 120;
 		text-decoration: underline;
 		font-size: 24px;
 		font-family: "League Gothic";
@@ -191,6 +189,7 @@
 	}
 
 	.menu-head {
+		padding-left: 0;
 		margin: 0 auto;
 		top: 130px;
 		width: 245px;
@@ -218,7 +217,7 @@
 
 	.head-links--head:hover {
 		border-bottom: 2px solid #edbfff;
-		background: rgba(36, 28, 42, 0.5);
+		background: rgba(36, 28, 42, 0.7);
 	}
 
 	#toggle:checked ~ nav .menu-head {
@@ -229,25 +228,27 @@
 	}
 	
 	#toggle:checked ~ nav .menu-head .head-links--head {
+		box-sizing: content-box;
 		width: 245px;
 		line-height: 45px;
 		height: 45px;
-		border-top: rgba(91, 67, 102, 0.5);
-		border-bottom: rgba(53, 39, 61, 0.5);
+		border-top: 1px solid rgba(91, 67, 102, 0.5);
+		border-bottom: 1px solid rgba(53, 39, 61, 0.5);		
 	}
 
 	#toggle:checked ~ nav .menu-head .head-links--head:hover {
 		width: 245px;
 		background: rgba(36, 28, 42, 0.5);
+		border-bottom: 2px solid #edbfff;
 	}
 
-	.first-link:hover {
+	.first-link {
 		background: transparent;
 		border-radius: 5px 5px 0 0;
 		border-bottom: none;
 	}
 
-	.last-link:hover {
+	.last-link {
 		border-radius: 0 0 5px 5px;
 	}
 

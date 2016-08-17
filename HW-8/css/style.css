@@ -49,6 +49,13 @@ body,
 	
 }
 
+.viewport {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+
 header {
 	width: 100%;
 	max-width: 960px;
@@ -137,7 +144,6 @@ nav {
 	width: 55%;
 	min-height: 190px;
 	margin-top: 90px;
-	padding-left: 10px;
 	display: inline-block;
 	float: left;
 }
