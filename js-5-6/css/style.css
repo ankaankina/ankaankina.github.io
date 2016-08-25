@@ -1,0 +1,40 @@
+.container {
+  width: 650px;
+  padding: 30px;
+  border: 10px solid #000;
+  border-radius: 20px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+.main-block {
+  font-size: 1000%;
+  line-height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.num-block--millisec {
+  text-align: right;
+  margin-right: 20px;
+  font-size: 200%;
+}
+
+.btn {
+  font-size: 300%;
+  width: 190px;
+  height: 70px;
+}
+
+.button--left {
+  float: left;
+}
+
+.btn-continue,
+.btn-pause {
+  display: none;
+}
+
+.button--right {
+  float: right;
+}
