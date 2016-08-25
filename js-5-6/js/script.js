@@ -19,7 +19,7 @@ var clearButton = document.querySelector('.btn-danger');
 
 function timer() {
   ms++;
-  if (ms == 1000) {
+  if (ms == 100) {
     ms = 0;
     s++
   };
@@ -62,7 +62,7 @@ function timer() {
 
 var update = function() {
   if (right) {
-    count = setInterval(timer, 1);
+    count = setInterval(timer, 10);
     startButton.style.display = 'none';
     pauseButton.style.display = 'block';
   };
