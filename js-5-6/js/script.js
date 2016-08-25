@@ -79,7 +79,7 @@ var pause = function () {
 };
 
 var continuing = function () {
-  count = setInterval(timer, 1);
+  count = setInterval(timer, 10);
   console.log('new');
   startButton.style.display = 'none';
   pauseButton.style.display = 'block';
