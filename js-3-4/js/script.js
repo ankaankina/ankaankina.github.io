@@ -1,11 +1,11 @@
 var page = {
-  body: function () {
+  body: function bodyStyle() {
     body = document.body;
     body.style.width = '100%';
     body.style.backgroundColor = '#c8c8c8';
 },
 
-  addContainer: function (containerClass) {
+  addContainer: function () {
     container = document.createElement('div');
     container.classList.add('container');
     container.classList.add('row');
@@ -15,14 +15,14 @@ var page = {
     document.body.appendChild(container);
   },
 
-  addHeader: function (headerTag, headerText, headerClass) {
+  addHeader: function () {
     var header = document.createElement('h3');
     header.classList.add('text-center');
     header.innerHTML = 'Тест по программированию';
     container.appendChild(header);
   },
 
-  addQuestionsBlock: function (listQuestions, listAnswers) {
+  addQuestionsBlock: function () {
     var questForm = document.createElement('form');
     questForm.style.width = '100%';
     container.appendChild(questForm);
