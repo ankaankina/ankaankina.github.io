@@ -12,11 +12,6 @@ var $label1 = $('.label-1');
 var $label2 = $('.label-2');
 var $label3 = $('.label-3');
 
-// function getHelp() {
-//   $tips.show();
-//   // $tips.css('display', 'block');
-// };
-
 $button.on('click', function () {
   $tips.css('display', 'block');
 });
@@ -38,15 +33,5 @@ $label3.hover(function () {
 function () {
   $tip3.css('display', 'none');}
 );
-
-
-
-
-
-
-
-
-
-
 
 })
