@@ -40,6 +40,7 @@ label {
   margin-top: 5px;
   border-radius: 5px 5px 0 0;
   border: 1px solid #c5c5c5;
+  border-bottom: none;
   line-height: 40px;
   background: #eee;
   cursor: pointer;
