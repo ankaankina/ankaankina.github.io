@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f8b854;
+}
+
+.menu-item .fa {
+  color: #fff;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+.sub-menu-item .fa {
+  color: #fff;
+  line-height: 35px;
+}
+
+nav {
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: #0280cf;
+}
+
+.menu {
+  width: 630px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  float: left;
+  padding: 0 40px;
+}
+
+.menu-link {
+  line-height: 40px;
+}
+
+.sub-menu,
+.sec-sub-menu {
+  position: absolute;
+  width: 160px;
+  background: #0164a2;
+  margin-top: -5px;
+  margin-left: -55px;
+}
+
+.sub-menu {
+  display: none;
+  z-index: 100;
+}
+
+.sub-menu-link {
+  width: 140px;
+  margin: 0 auto;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #acddfc;
+}
+
+.sub-menu-link-last {
+  border-bottom: none;
+}
+
+.sec-sub-menu {
+  display: none;
+  margin-top: -35px;
+  margin-left: 160px;
+}
+
+.wrapper {
+
+}
+
+.slider {
+  width: 530px;
+  padding: 20px;
+  border: 2px solid #0280cf;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0280cf;
+  margin: 100px auto 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider ul {
+  width: 20000em;
+  position: relative;
+}
+
+.slider-picture {
+  float: left;
+  width: 250px;
+  height: 160px;
+  margin-right: 30px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/*.buttons {
+  margin: -90px auto 0 auto;
+  width: 584px;
+  z-index: 95;
+}*/
+
+.jcarousel-btn {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url(../img/fancybox_sprite.png);
+  margin-top: 70px;
+}
+.jcarousel-prev {
+  background-position: -3px -38px;
+  margin-left: -15px;
+}
+
+.jcarousel-next {
+  background-position: -3px -74px;
+  margin-left: 515px;
+}
