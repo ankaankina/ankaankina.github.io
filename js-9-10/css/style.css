@@ -112,11 +112,9 @@ nav {
   vertical-align: middle;
 }
 
-/*.buttons {
-  margin: -90px auto 0 auto;
-  width: 584px;
-  z-index: 95;
-}*/
+.last-slider-picture {
+  width: 10px;
+}
 
 .jcarousel-btn {
   position: absolute;

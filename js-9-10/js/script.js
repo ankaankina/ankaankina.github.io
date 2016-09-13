@@ -19,12 +19,11 @@ $(document).ready(function () {
 		closeEffect	: 'none'
 	});
 
-  // $(function() {
-  //   $(".jcarousel").jcarousel({
-  //     list: '.jcarousel-list',
-  //     rtl: true
-  //   });
-  // });
+  $(function() {
+    $('.jcarousel').jcarousel({
+      list: '.jcarousel-list'
+    });
+  });
 
   var $buttonLinks = $('.jcarousel-btn');
   $buttonLinks.on('click', function (e) {
