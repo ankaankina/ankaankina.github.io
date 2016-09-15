@@ -5,11 +5,14 @@
     <title>homework JS-10</title>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/cusel.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.jcarousel.js"></script>
     <script src="js/jquery.jcarousel-control.js"></script>
     <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/cusel.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -53,8 +56,48 @@
       <a class="jcarousel-btn jcarousel-prev" href=""></a>
       <a class="jcarousel-btn jcarousel-next" href=""></a>
     </div>
-    <div class="buttons">
-    </div>
+
+    <form class="checkbox" action="">
+      <h2>JQuery checkbox</h2>
+      <div class="jquery-checkbox">
+        <label for="jquery-chb-1">label 1</label>
+        <span class="niceCheck"><input type="checkbox" class="jCheck" name="name" id="jquery-chb-1" value="on"></span>
+      </div>
+      <div class="jquery-checkbox">
+        <label for="jquery-chb-2">label 2</label>
+        <span class="niceCheck"><input type="checkbox" class="jCheck" name="name" id="jquery-chb-2"  value="on" checked=""></span>
+      </div>
+      <div class="jquery-checkbox">
+        <label for="jquery-chb-3">label 3</label>
+        <span class="niceCheck"><input type="checkbox" class="jCheck" name="name" id="jquery-chb-3"  value="on" disabled=""></span>
+      </div>
+
+      <h2>CSS checkbox</h2>
+      <div class="css-checkbox">
+        <label class="css-label" for="css-chb-1">label 1</label>
+        <input class="css-input" type="checkbox" name="name" id="css-chb-1">
+      </div>
+      <div class="css-checkbox">
+        <label class="css-label" for="css-chb-2">label 2</label>
+        <input class="css-input" type="checkbox" name="name" id="css-chb-2" checked="">
+      </div>
+      <div class="css-checkbox">
+        <label class="css-label" for="css-chb-3">label 3</label>
+        <input class="css-input" type="checkbox" name="name" id="css-chb-3" checked="" disabled="">
+      </div>
+
+      <div class="select-block lineForm overflow-block">
+        <select id="sel80" id="selectList" name="selectList">
+          <option value="option"></option>
+          <option value="option" selected="">one big selected option 1</option>
+          <option value="option">option 2</option>
+          <option value="option">option 3</option>
+          <option value="option">option 4</option>
+          <option value="option">option 5</option>
+          <option value="option">option 6</option>
+        </select>
+      </div>
+    </form>
 
 
 

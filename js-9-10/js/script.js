@@ -39,5 +39,73 @@ $(document).ready(function () {
   });
 
 
+  // JQUERY CHECKBOX
+  $('.niceCheck').mousedown(
+    function () {
+      changeCheck($(this));
+    });
+
+  $('.niceCheck').each(
+    function () {
+      changeCheckStart($(this));
+    });
+
+  $('.niceCheck').each(
+    function () {
+      viewCheckedDisabled($(this));
+    });
+
+
+  // SELECT
+  var params = {
+  		changedEl: ".lineForm select",
+  		visRows: 5,
+  		scrollArrows: true
+  	}
+
+  	cuSel(params);
+
+  	var params = {
+  		changedEl: "#selectList",
+  		scrollArrows: false
+  	}
+
+  	cuSel(params);
+
 
 })
+
+
+
+
+// JQUERY CHECKBOX
+function changeCheck(el) {
+  var el = el,
+      input = el.find('input.jCheck').eq(0);
+  if (!input.attr('checked')) {
+    el.css('background-position', '0 -17px');
+    input.attr('checked', true);
+  } else {
+    el.css('background-position', '0 0');
+    input.attr('checked', false)
+  }
+    return true;
+}
+
+function changeCheckStart(el) {
+  var el = el,
+      input = el.find('input.jCheck').eq(0);
+    if (input.attr('checked')) {
+      el.addClass('niceChecked');
+    }
+  return true;
+}
+
+function viewCheckedDisabled(el) {
+  var el = el,
+      input = el.find('input.jCheck').eq(0);
+    if (input.attr('disabled')) {
+      el.addClass('niceCheckedDisabled');
+    }
+  return true;
+}

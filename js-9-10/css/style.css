@@ -132,3 +132,74 @@ nav {
   background-position: -3px -74px;
   margin-left: 515px;
 }
+
+form {
+  width: 510px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #84b4d2;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.checkbox div {
+  margin-bottom: 10px;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.niceCheck {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url('../img/checkbox.png');
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.niceChecked {
+  background-position: 0 -17px;
+}
+
+.niceCheckedDisabled {
+  background: url('../img/checkbox-disabled.png');
+  background-position: 0 -17px;
+}
+
+.css-label:after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  width: 17px;
+  height: 17px;
+  background: url('../img/checkbox.png');
+  background-position: 0 0;
+}
+
+input[type="checkbox"].css-input:checked + .css-label:after {
+  content: "";
+  background: url('../img/checkbox.png');
+  background-position: 0 -17px;
+}
+
+.css-input:checked:disabled + .css-label:after {
+  content: "";
+  background: url('../img/checkbox-disabled.png');
+  background-position: 0 -17px;
+}
+
+select {
+  margin: 20px auto;
+  display: block;
+  padding: 0 10px;
+}
