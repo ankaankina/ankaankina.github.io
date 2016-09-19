@@ -4,7 +4,6 @@ $(document).ready(function () {
 
   // DROP DOWN MENU
   var dropDownMenuItem = $('.menu-item-dropdown');
-  var dropDownSubMenuItem = $('.sub-menu-link-dropdown');
 
   dropDownMenuItem.hover(function(){
       $(this).children('.sub-menu').slideDown(200);
@@ -50,11 +49,6 @@ $(document).ready(function () {
       changeCheckStart($(this));
     });
 
-  $('.niceCheck').each(
-    function () {
-      viewCheckedDisabled($(this));
-    });
-
 
   // SELECT
   var params = {
@@ -79,15 +73,20 @@ $(document).ready(function () {
 // JQUERY CHECKBOX
 function changeCheck(el) {
   var el = el,
-      input = el.find('input.jCheck').eq(0);
-  if (!input.attr('checked')) {
-    el.css('background-position', '0 -17px');
-    input.attr('checked', true);
+    input = el.find('input.jCheck').eq(0);
+  if (input.attr('disabled')) {
+    el.addClass('niceCheckedDisabled');
+    input.attr('disabled');
   } else {
-    el.css('background-position', '0 0');
-    input.attr('checked', false)
-  }
+    if (!input.attr('checked')) {
+      el.css('background-position', '0 -17px');
+      input.attr('checked', true);
+    } else {
+      el.css('background-position', '0 0');
+      input.attr('checked', false)
+    }
     return true;
+  }
 }
 
 function changeCheckStart(el) {
@@ -96,14 +95,9 @@ function changeCheckStart(el) {
     if (input.attr('checked')) {
       el.addClass('niceChecked');
     }
-  return true;
-}
-
-function viewCheckedDisabled(el) {
-  var el = el,
-      input = el.find('input.jCheck').eq(0);
     if (input.attr('disabled')) {
       el.addClass('niceCheckedDisabled');
+      input.attr('disabled');
     }
   return true;
 }
