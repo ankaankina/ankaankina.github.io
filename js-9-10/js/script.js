@@ -77,6 +77,7 @@ function changeCheck(el) {
   if (input.attr('disabled')) {
     el.addClass('niceCheckedDisabled');
     input.attr('disabled', true);
+    input.attr('checked', false)
   } else {
     if (!input.attr('checked')) {
       el.css('background-position', '0 -17px');
@@ -92,12 +93,12 @@ function changeCheck(el) {
 function changeCheckStart(el) {
   var el = el,
       input = el.find('input.jCheck').eq(0);
-    if (input.attr('checked')) {
-      el.addClass('niceChecked');
-    }
     if (input.attr('disabled')) {
       el.addClass('niceCheckedDisabled');
-      input.attr('disabled');
+      input.attr('disabled', true);
+    }
+    if (input.attr('checked')) {
+      el.addClass('niceChecked');
     }
   return true;
 }
