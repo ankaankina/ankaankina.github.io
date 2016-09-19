@@ -164,7 +164,6 @@ input[type="checkbox"] {
   height: 17px;
   background: url('../img/checkbox.png');
   background-position: 0 0;
-  cursor: pointer;
 }
 
 .niceChecked {
@@ -176,7 +175,7 @@ input[type="checkbox"] {
   background-position: 0 -17px;
 }
 
-.css-label:after {
+.css-checkbox label:after {
   content: "";
   display: inline-block;
   margin-left: 5px;
@@ -186,20 +185,25 @@ input[type="checkbox"] {
   background-position: 0 0;
 }
 
-input[type="checkbox"].css-input:checked + .css-label:after {
+.css-checkbox input[type="checkbox"]:checked + label:after {
   content: "";
-  background: url('../img/checkbox.png');
   background-position: 0 -17px;
 }
 
-.css-input:checked:disabled + .css-label:after {
+.css-checkbox input[type="checkbox"]:disabled + label:after {
+  content: "";
+  background: url(../img/checkbox-disabled.png);
+  background-position: 0 0;
+}
+
+.css-checkbox input[type="checkbox"]:checked:disabled + label:after {
   content: "";
   background: url('../img/checkbox-disabled.png');
   background-position: 0 -17px;
 }
 
-select {
-  margin: 20px auto;
+#selectList {
+  margin-top: 20px;
   display: block;
   padding: 0 10px;
 }

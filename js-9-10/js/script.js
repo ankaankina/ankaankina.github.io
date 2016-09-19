@@ -71,8 +71,6 @@ $(document).ready(function () {
   	}
 
   	cuSel(params);
-
-
 })
 
 
