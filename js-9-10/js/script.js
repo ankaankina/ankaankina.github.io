@@ -76,7 +76,7 @@ function changeCheck(el) {
     input = el.find('input.jCheck').eq(0);
   if (input.attr('disabled')) {
     el.addClass('niceCheckedDisabled');
-    input.attr('disabled');
+    input.attr('disabled', true);
   } else {
     if (!input.attr('checked')) {
       el.css('background-position', '0 -17px');
