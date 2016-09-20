@@ -5,6 +5,23 @@ $(document).ready(function () {
   // DROP DOWN MENU
   var dropDownMenuItem = $('.menu-item-dropdown');
 
+  // SLIDER
+  var $buttonLinks = $('.jcarousel-btn');
+
+  // SELECT
+  var params = {
+    changedEl: ".lineForm select",
+    visRows: 5,
+    scrollArrows: true
+  }
+  var params2 = {
+    changedEl: "#selectList",
+    scrollArrows: false
+  }
+
+
+
+  // FUNC FOR DROP DOWN MENU
   dropDownMenuItem.hover(function(){
       $(this).children('.sub-menu').slideDown(200);
     }, function(){
@@ -12,7 +29,7 @@ $(document).ready(function () {
     })
 
 
-  // SLIDER
+  // FUNC FOR SLIDER
   $(".fancybox").fancybox({
 		openEffect	: 'none',
 		closeEffect	: 'none'
@@ -24,7 +41,6 @@ $(document).ready(function () {
     });
   });
 
-  var $buttonLinks = $('.jcarousel-btn');
   $buttonLinks.on('click', function (e) {
     e.preventDefault();
   })
@@ -50,21 +66,9 @@ $(document).ready(function () {
     });
 
 
-  // SELECT
-  var params = {
-  		changedEl: ".lineForm select",
-  		visRows: 5,
-  		scrollArrows: true
-  	}
-
+  // STYLING SELECT
   	cuSel(params);
-
-  	var params = {
-  		changedEl: "#selectList",
-  		scrollArrows: false
-  	}
-
-  	cuSel(params);
+  	cuSel(params2);
 })
 
 
@@ -77,7 +81,7 @@ function changeCheck(el) {
   if (input.attr('disabled')) {
     el.addClass('niceCheckedDisabled');
     input.attr('disabled', true);
-    input.attr('checked', false)
+    input.attr('disabled').preventDefault;
   } else {
     if (!input.attr('checked')) {
       el.css('background-position', '0 -17px');
