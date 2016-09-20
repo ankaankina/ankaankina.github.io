@@ -1,6 +1,8 @@
 'use strict'
 
-$(document).ready(function () {
+$(document).ready(init)
+
+function init() {
 
   // DROP DOWN MENU
   var dropDownMenuItem = $('.menu-item-dropdown');
@@ -69,7 +71,7 @@ $(document).ready(function () {
   // STYLING SELECT
   	cuSel(params);
   	cuSel(params2);
-})
+}
 
 
 
