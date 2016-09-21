@@ -1,0 +1,57 @@
+.carousel-hider {
+  width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-list {
+  list-style: none;
+  width: 20000px;
+  position: relative;
+  padding: 0;
+}
+
+.carousel-element {
+  display: block;
+  margin-right: 25px;
+  float: left;
+  text-align: center;
+  width: 150px;
+}
+
+.carousel-element div {
+  height: 85px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.carousel-element img {
+  display: block;
+  max-width: 150px;
+}
+
+.carousel-arrows {
+  margin: 20px auto;
+  width: 200px;
+}
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+  float: left;
+  font-weight: bold;
+  display: block;
+  border: 1px solid #08346d;
+  background-color: #42699c;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+.carousel-arrow-left {
+  margin-right: 35px;
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+  cursor: pointer;
+  background-color: #08346d;
+}

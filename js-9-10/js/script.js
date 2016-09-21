@@ -76,7 +76,7 @@ function init() {
 
 
 
-// JQUERY CHECKBOX
+// WORKING WITH JQUERY CHECKBOX
 function changeCheck(el) {
   var el = el,
     input = el.find('input.jCheck').eq(0);

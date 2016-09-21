@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Homework for JS-12</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <a class="button" href="img/homework1.jpg" target="_blank">Example</a>
+    <a class="button button-carousel" href="carousel/index.html">Carousel</a>
+
+    <script type="text/template" id="page">
+      <div class="wrapper">
+      <% for (var i = 0; i < data.length; i++) { %>
+          <div class="block">
+            <h1><%= data[i].title %></h1>
+            <img src="img/avatar.jpg" alt="">
+            <p class="caption"><%= data[i].position %></p>
+          </div>
+          <div class="block">
+            <h2><%= data[i].myGoals %></h2>
+            <ul>
+              <% for (var j = 0; j < data.length; j++) { %>
+                <li><%= data[i].goal1 %></li>
+                <li><%= data[i].goal2 %></li>
+                <li><%= data[i].goal3 %></li>
+              <% }; %>
+            </ul>
+          </div>
+          <div class="block">
+            <h2><%= data[i].contact %></h2>
+            <p class="tel"><%= data[i].tel %></p>
+            <h2><%= data[i].social %></h2>
+            <a href="https://vk.com/anka_ankina" class="link" target="_blank"><%= data[i].link %></a>
+          </div>
+            <h2><%= data[i].feedback %></h2>
+            <p class="feedback"><%= data[i].answer %></p>
+        </div>
+      <% }; %>
+    </script>
+
+  </body>
+</html>

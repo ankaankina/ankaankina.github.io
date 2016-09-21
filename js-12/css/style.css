@@ -1,0 +1,50 @@
+.button {
+  top: 100px;
+}
+
+.button-carousel {
+  top: 180px;
+}
+.wrapper {
+  background: #fff;
+  width: 550px;
+  margin: 30px auto;
+  padding: 50px 80px;
+  box-shadow: 0 0 10px #000;
+}
+
+.block {
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 25px;
+}
+
+img {
+  display: block;
+  width: 250px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.caption {
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+li {
+  list-style: circle;
+  margin-left: 40px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tel,
+.link,
+.feedback {
+  padding-left: 20px;
+}
+
+.feedback {
+  padding-bottom: 50px;
+}
