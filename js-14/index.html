@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="overlay">
+		<div class="modal-window">
+			<div class="results">
+
+			</div>
+			<button type="button" class="btn btn-primary reload" name="button">Пройти тест заново</button>
+		</div>
+	</div>
+
+
+	<script type="text/template" id="test">
+		<div class="container row">
+			<h3 class="text-center">Тест по программированию</h3>
+				<form action="">
+					<ol>
+						<% for ( var i = 0; i < questions.length; i++ ) { %>
+							<li class="lead"><%= questions[i].question %></li>
+								<ul>
+									<% for ( var j = 0; j < questions[i].answers.length; j++ ) { %>
+										<li>
+											<input id="<%=questions[i].id+i+j%>" class="checkbox" type="checkbox" name="name" value="">
+											<label for="<%=questions[i].id+i+j%>">
+											<%= questions[i].answers[j] %>
+											</label>
+										</li>
+									<% } %>
+								</ul>
+							<% } %>
+						</ol>
+					</form>
+					<button class="btn btn-info" type="submit" name="button">Проверить мои результаты</button>
+				</div>
+			</script>
+
+
+
+</body>
+</html>
