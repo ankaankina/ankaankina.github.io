@@ -11,13 +11,13 @@ function init() {
     questions: [
       {
         id: 'id-1',
-        question: 'К какому участку скрипта применяется строгие правила ‘use strict’?',
+        question: 'К какому участку скрипта применяется строгое правило ‘use strict’?',
         answers: ['Либо во всем скрипте, либо в отдельной функции.', 'Внутри блока {}', 'Во всем скрипте.'],
         rightAnswer: 0,
       },
       {
         id: 'id-2',
-        question: 'Выберите правильный вариант фрагмента JSON файла',
+        question: 'Выберите правильный вариант фрагмента JSON-файла',
         answers: ['{‘name’: ‘Иван’ }', '{name: "Иван" }', '{"name": "Иван" }'],
         rightAnswer: 2,
       },
@@ -35,7 +35,7 @@ function init() {
   });
   $('body').append(content);
 
-  
+
   function hideModal() {
     overlay.css('display', 'none');
     $('input').removeAttr('disabled');
@@ -50,6 +50,7 @@ function init() {
           if (testPage.questions[i].rightAnswer == j) {
             userAnswer[i] = true;
             result = true;
+            break;
           } else {
             userAnswer[i] = false;
             result = false;
@@ -78,18 +79,28 @@ function init() {
     // });
 
     if (result) {
-      $('.results').html('<h4>Вы правильно ответили.</h4>');
+      $('.results').html('<h4>Вы правильно ответили:</h4>');
       for (var i = 0; i < testPage.questions.length; i++) {
         if (userAnswer[i]) {
-          $('.results').innerHTML += '<p>' + testPage.questions[i].question + '<br><b>' + testPage.questions[i].answers[containerQuestions.questions[i].rightAnswer] + '</b></p>'
+          $('.results').append('<p>' + testPage.questions[i].question + '<br><b>' + testPage.questions[i].answers[testPage.questions[i].rightAnswer] + '</b></p>')
           result = false;
-        }
+        };
       }
       $('input').removeAttr('checked');
     } else {
-      $('.results').html('<h4>Вы ответили неправильно.<br>Попробуйте еще раз.</h4>');
+      $('.results').html('<h4>Вы правильно ответили:</h4>');
+      for (var i = 0; i < testPage.questions.length; i++) {
+        if (userAnswer[i]) {
+          $('.results').append('<p>' + testPage.questions[i].question + '<br><b>' + testPage.questions[i].answers[testPage.questions[i].rightAnswer] + '</b></p>')
+          result = false;
+        };
+      }
       $('input').removeAttr('checked');
-    };
+    }
+    // else {
+    //   $('.results').html('<h4>Вы ответили неправильно.<br>Попробуйте еще раз.</h4>');
+    //   $('input').removeAttr('checked');
+    // };
 
     showModal();
   };
