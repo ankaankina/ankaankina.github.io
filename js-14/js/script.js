@@ -60,34 +60,34 @@ function init() {
       };
       }
 
-    // var result;
-    // var indx = testPage.questions.map(function(el, i) {
-    //   var el = testPage.questions
-    //   return i + el.rightAnswer * 3
-    // });
-    // $('input').each(function(i) {
-    //   if (~indx.indexOf(i) && !this.checked || !~indx.indexOf(i) && this.checked) $result = false
-    // });
+    var indx = testPage.questions.map(function(el, i) {
+      var el = testPage.questions
+      return i + el.rightAnswer * 3
+    });
+    $('input').each(function(i) {
+      if (~indx.indexOf(i) && !this.checked || !~indx.indexOf(i) && this.checked) result = false
+    });
 
-    // $('input').each(function(i) {
-    //   console.log(question[i]);
-    //   if ($(this).prop('checked')) {
-    //     if (testPage.questions.answers[i] == testPage.questions.rightAnswer) {
-    //       result = true;
-    //     } else { result = false };
-    //   }
-    // });
+    $('input').each(function(i) {
+      console.log(testPage.questions[i]);
+      if ($(this).attr('checked')) {
+        if (testPage.questions[i].answers[j] == testPage.questions.rightAnswer) {
+          result = true;
+        } else { result = false };
+      }
+    });
 
     if (result) {
-      $('.results').html('<h4>Вы правильно ответили:</h4>');
-      for (var i = 0; i < testPage.questions.length; i++) {
-        if (userAnswer[i]) {
-          $('.results').append('<p>' + testPage.questions[i].question + '<br><b>' + testPage.questions[i].answers[testPage.questions[i].rightAnswer] + '</b></p>')
-          result = false;
-        };
-      }
-      $('input').removeAttr('checked');
-    } else {
+      // $('.results').html('<h4>Вы правильно ответили:</h4>');
+      // for (var i = 0; i < testPage.questions.length; i++) {
+      //   if (userAnswer[i]) {
+      //     $('.results').append('<p>' + testPage.questions[i].question + '<br><b>' + testPage.questions[i].answers[testPage.questions[i].rightAnswer] + '</b></p>')
+      //     result = false;
+      //   };
+      // }
+      // $('input').removeAttr('checked');
+    }
+    else {
       $('.results').html('<h4>Вы правильно ответили:</h4>');
       for (var i = 0; i < testPage.questions.length; i++) {
         if (userAnswer[i]) {
