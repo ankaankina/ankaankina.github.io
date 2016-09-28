@@ -16,7 +16,7 @@ function init() {
 			{
 				id: "id-2",
 				question: "Выберите правильный вариант фрагмента JSON-файла",
-				answers: ["{'name': 'Иван'}", "{\"name\": \"Иван\"}", " {name: \"Иван\" }"],
+				answers: ["{'name': 'Иван'}", " {name: \"Иван\" }", "{\"name\": \"Иван\"}"],
 				rightAnswer: 2
 			},
 			{
@@ -37,8 +37,7 @@ function init() {
 
 	function hideModal() {
 		overlay.css("display", "none");
-		$("input").removeAttr("disabled");
-		$("input").removeAttr("checked");
+		$("input").removeAttr("disabled", "checked");
 	}
 
 	function checkAnswer() {

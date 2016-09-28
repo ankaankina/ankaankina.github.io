@@ -22,14 +22,14 @@ body {
   font-size: 25px;
   color: white;
   text-decoration: none;
-  background: linear-gradient(#65a6fb, #08346d);
+  background: linear-gradient(#3083f1, #08346d);
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 3px 3px 3px #aaa;
 }
 
 .button:hover {
-  background: linear-gradient( #08346d, #65a6fb);
+  background: #124990;
   line-height: 63px;
 }
 
