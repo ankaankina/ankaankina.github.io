@@ -69,7 +69,6 @@ function init() {
     });
 
     $('input').each(function(i) {
-      console.log(testPage.questions[i]);
       if ($(this).attr('checked')) {
         if (testPage.questions[i].answers[j] == testPage.questions.rightAnswer) {
           result = true;
@@ -78,20 +77,13 @@ function init() {
     });
 
     if (result) {
-      // $('.results').html('<h4>Вы правильно ответили:</h4>');
-      // for (var i = 0; i < testPage.questions.length; i++) {
-      //   if (userAnswer[i]) {
-      //     $('.results').append('<p>' + testPage.questions[i].question + '<br><b>' + testPage.questions[i].answers[testPage.questions[i].rightAnswer] + '</b></p>')
-      //     result = false;
-      //   };
-      // }
-      // $('input').removeAttr('checked');
+      return false;
     }
     else {
-      $('.results').html('<h4>Вы правильно ответили:</h4>');
+      $('.results').html('<h3>Вы правильно ответили:</h3>');
       for (var i = 0; i < testPage.questions.length; i++) {
         if (userAnswer[i]) {
-          $('.results').append('<p>' + testPage.questions[i].question + '<br><b>' + testPage.questions[i].answers[testPage.questions[i].rightAnswer] + '</b></p>')
+          $('.results').append('<p><b>' + testPage.questions[i].question + '</b></p><p class="green">' + testPage.questions[i].answers[testPage.questions[i].rightAnswer] + '</b></p>')
           result = false;
         };
       }
