@@ -4,11 +4,20 @@ body {
   position: relative;
 }
 
+.btn-danger {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
 .container {
   width: 800px;
   margin: 50px auto;
   background: #fff;
-  padding-bottom: 25px;
+  padding: 15px 0 25px 0;
 }
 
 ol {
@@ -41,8 +50,9 @@ input[type="checkbox"] {
   float: left;
 }
 
-button {
-  margin: 25px 35%;
+.btn-info {
+  margin: 25px 33%;
+  font-size: 1.3em;
 }
 
 div.overlay {
