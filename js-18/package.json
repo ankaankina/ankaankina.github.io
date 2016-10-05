@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0"
+  },
+  "scripts": {
+    "test": "console.log('json-file')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankaankina/ankaankina.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankaankina/ankaankina.github.io/issues"
+  },
+  "homepage": "https://github.com/ankaankina/ankaankina.github.io#readme"
+}
