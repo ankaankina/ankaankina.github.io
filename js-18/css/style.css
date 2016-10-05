@@ -3,14 +3,8 @@
   padding: 0;
 }
 
-html,
-body {
-  width: 100%;
-}
-
 .wrapper {
   margin: 20px 30px;
-  width: 100%;
   font-family: Arial;
   color: #4a4847;
   font-weight: 200;
