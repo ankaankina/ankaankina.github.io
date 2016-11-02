@@ -65,7 +65,10 @@ footer {
     font-family: $p-font;
     font-size: 14px;
     line-height: 24px;
-    color: $grey;
     float: none;
+
+    .menu-link {
+      color: $grey;      
+    }
   }
 }

@@ -218,8 +218,9 @@ footer {
     font-family: "Roboto Light";
     font-size: 14px;
     line-height: 24px;
-    color: #666666;
     float: none; }
+    .footer-content .menu .menu-link {
+      color: #666666; }
 
 html,
 body,
