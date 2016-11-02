@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px) {
+  header,
+  .wrapper-content,
+  .footer-content {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+
+  .wrapper-content {
+    padding-bottom: 40px;
+
+    .main-title {
+      padding-top: 33px;
+      margin-bottom: 10px;
+    }
+
+    .partners {
+
+      ul {
+        width: 220px;
+
+        .partner {
+          margin-bottom: 25px;
+          margin-left: 0;
+
+          h5 {
+            margin: 10px 0;
+          }
+        }
+
+        .partner-1,
+        .partner-2 {
+          float: none;
+        }
+
+        .partner-3,
+        .partner-4 {
+          float: none;
+        }
+      }
+
+      .search-partners {
+        width: auto;
+        text-align: center;
+      }
+    }
+
+    .activities-links {
+      margin-bottom: -15px;
+
+      .activities-block {
+        width: 300px;
+        height: 120px;
+        margin-bottom: 10px;
+
+        .activities-link {
+          line-height: 120px;
+        }
+      }
+    }
+
+    .interests {
+      margin-bottom: 10px;
+    }
+
+    form {
+      width: 300px;
+
+      input[type="text"] {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      button {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+  }
+}

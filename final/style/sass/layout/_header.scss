@@ -67,14 +67,15 @@ header {
 
   .sign-up {
     height: 36px;
+    line-height: 34px;
     border: 2px solid $white;
     border-radius: 30px;
     padding: 0 18px;
+    box-sizing: border-box;
   }
 }
 
 @media screen and (max-width: 940px) {
-
   .header-logo {
     padding-left: 40px;
   }
@@ -82,5 +83,53 @@ header {
   .header-links {
     padding-right: 40px;
   }
-  
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 140px;
+    position: relative;
+
+    .header-content {
+      width: 180px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+
+      .header-logo {
+        display: inline-block;
+        text-align: center;
+        margin-top: 140px;
+        padding-left: 0;
+      }
+    }
+
+    h1 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+  }
+
+
+  .header-links {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -78px;
+    margin-top: 20px;
+    padding-right: 0;
+  }
+
+
+
+
+
+
+
 }

@@ -90,6 +90,63 @@ footer {
       }
     }
   }
+}
 
 
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 15px 0;
+
+    .footer-content {
+
+      .footer-block {
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+        text-align: center;
+
+        &:first-child,
+        &:last-child {
+          width: auto;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        &:last-child {
+          float: none;
+          width: 110px;
+
+          .designed {
+            text-align: center;
+          }
+        }
+
+        ul {
+          display: block;
+          margin: 0 auto;
+          width: 190px;
+
+          .menu {
+            float: left;
+            margin-right: 10px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+        }
+
+
+
+      }
+    }
+
+  }
 }
