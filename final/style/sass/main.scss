@@ -1,0 +1,305 @@
+@import "utils/_fonts";
+@import "utils/_variables";
+@import "utils/_placeholders";
+@import "utils/_media-768";
+@import "utils/_media-320";
+
+@import "components/_slider";
+
+@import "layout/_header";
+@import "layout/_footer";
+
+html,
+body,
+.wrapper,
+footer {
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background: url('../../img/bg.jpg') center top no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: $white;
+}
+
+.wrapper-content {
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+
+  .main-title {
+    @extend %main-title;
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom: 40px;
+  }
+}
+
+.how-works {
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+//
+// PARTNERS BLOCK
+//
+.partners ul {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  li {
+    width: 220px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+    text-align: center;
+    float: left;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .partner-face {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      background: url('../../img/sprite.jpg');
+      position: relative;
+    }
+
+    .face-1 {
+      background-position: -1204px 0;
+    }
+
+    .face-2 {
+      background-position: -1204px -121px;
+    }
+
+    .face-3 {
+      background-position: -1204px -242px;
+    }
+
+    .face-4 {
+      background-position: -1204px -363px;
+    }
+
+    .face-icon {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      bottom: 0;
+      right: 0;
+      border: 4px solid $white;
+      border-radius: 50%;
+
+      .icon {
+        width: 16px;
+        height: 18px;
+        margin: 6px 8px;
+        background: url('../../img/sprite.png');
+      }
+
+      .icon-2 {
+        background-position: -17px 0;
+      }
+
+      .icon-3 {
+        background-position: -34px 0;
+      }
+
+      .icon-4 {
+        background-position: -51px 0;
+      }
+
+    }
+
+    .face-icon-1 {
+      background-color: $theme-color;
+    }
+
+    .face-icon-2 {
+      background-color: $green;
+    }
+
+    .face-icon-3 {
+      background-color: $yellow;
+    }
+
+    .face-icon-4 {
+      background-color: $blue;
+    }
+
+
+    h5 {
+      font-family: $main-font;
+      font-size: 14px;
+      color: $main-text-color;
+      margin: 17px 0 12px 0;
+    }
+
+    p {
+      font-family: $p-font;
+      font-size: 14px;
+      color: $grey;
+      line-height: 18px;
+    }
+  }
+}
+
+.search-partners {
+  @extend %btn-text;
+  line-height: 40px;
+  padding: 0 31px;
+  width: 135px;
+  border-radius: 30px;
+  margin: 0 auto;
+  background: transparent;
+  border: 2px solid $theme-color;
+  color: $theme-color;
+}
+
+//
+// ACTIVITIES BLOCK
+//
+.activities {
+
+  .activities-links {
+    margin-bottom: -20px;
+
+    .activities-block {
+      background: url('../../img/sprite.jpg');
+      float: left;
+      width: 620px;
+      height: 310px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+
+      a {
+        display: block;
+        text-align: center;
+        line-height: 300px;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        @extend %main-title;
+        color: $white;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+
+    .short {
+      width: 300px;
+    }
+
+    .left {
+      margin-right: 20px;
+    }
+
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .link-1 {
+      background-position: 0 -401px;
+    }
+
+    .link-2 {
+      background-position: -301px -401px;
+    }
+
+    .link-3 {
+      background-position: -602px -401px;
+    }
+
+    .link-4 {
+      background-position: -903px 0;
+    }
+
+    .link-5 {
+      background-position: 0 -712px;
+    }
+
+    .link-6 {
+      background-position: -621px -712px;
+    }
+
+    .link-7 {
+      background-position: -903px -311px;
+    }
+
+  }
+
+  .interests {
+    font-family: $p-font;
+    color: $dark-grey;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  form {
+    width: 410px;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    input[type="text"] {
+      float: left;
+      width: 240px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-family: $p-font;
+      font-size: 14px;
+      color: $grey;
+    }
+
+    button {
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      @extend %btn-text;
+      background: $theme-color;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+
+      &:hover {
+        background: darken($theme-color, 4%);
+      }
+    }
+  }
+}

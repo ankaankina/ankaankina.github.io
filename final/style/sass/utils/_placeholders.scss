@@ -1,0 +1,24 @@
+%logo {
+  text-transform: uppercase;
+  font-family: $main-font;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+%main-title {
+  font-family: $main-font;
+  font-size: 22px;
+  color: $main-text-color;
+}
+
+%btn-text {
+  display: block;
+  color: $white;
+  font-family: $main-font;
+  font-size: 14px;
+}
+
+%btn-form {
+  display: block;
+  box-sizing: border-box;
+}

@@ -15,8 +15,8 @@ $(function() {
         success: function () {
           console.log(":)");
         },
-        error: function () {
-          console.log(":(");
+        error: function (data, e) {
+          console.log(e);
         }
     });
 

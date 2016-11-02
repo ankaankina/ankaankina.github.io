@@ -1,0 +1,74 @@
+header {
+  width: 940px;
+  padding: 40px 0 235px 0;
+  margin: 0 auto;
+
+  h1 {
+    font-family: $main-font;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 52px;
+    text-align: center;
+    line-height: 65px;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    font-family: $p-font;
+    color: $white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 35px;
+  }
+
+  .find {
+    @extend %btn-text;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 25px;
+    background: $theme-color;
+    margin: 0 auto;
+    border-radius: 30px;
+    width: 180px;
+
+    &:hover {
+      background: darken($theme-color, 4%);
+    }
+  }
+}
+
+.header-content::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header-logo {
+  @extend %logo;
+  color: $white;
+  float: left;
+  line-height: 36px;
+}
+
+.header-links {
+  float: right;
+  margin-bottom: 135px;
+
+  a {
+    float: left;
+    @extend %btn-text;
+    line-height: 36px;
+  }
+
+  .log-in {
+    margin-right: 18px;
+  }
+
+  .sign-up {
+    height: 36px;
+    border: 2px solid $white;
+    border-radius: 30px;
+    padding: 0 18px;
+  }
+}

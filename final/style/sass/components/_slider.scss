@@ -1,0 +1,113 @@
+.sliders {
+  width: 100%;
+
+  .slider {
+    display: block;
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+
+    // SLIDER ARROWS
+    .slider-arrows {
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      margin-top: 153px;
+
+      .arrow {
+        background: url(../../img/sprite.png);
+        margin-left: 20px;
+        width: 30px;
+        height: 55px;
+        cursor: pointer;
+      }
+
+      .left-arrow {
+        background-position: -110px 0;
+        float: left;
+      }
+
+      .right-arrow {
+        margin-left: 250px;
+        background-position: -141px 0;
+      }
+    }
+
+    //SLIDER TEXT
+    .slider-text {
+      position: absolute;
+      display: table-cell;
+      z-index: 90;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 400px;
+      padding-left: 20px;
+      border-radius: 5px;
+      background-image: linear-gradient(to top, rgba(51, 51, 51, 0.5) 10%, rgba(0, 0, 0, 0.1));
+
+      .slider-text-block {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20px;
+        padding-right: 20px;
+      }
+
+      .step {
+        display: block;
+        width: 41px;
+        margin-bottom: 15px;
+        line-height: 20px;
+        padding: 0 14px;
+        background: $theme-color;
+        border-radius: 10px;
+        font-family: $main-reg-font;
+        font-size: 10px;
+        color: $white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .slide-title {
+        font-family: $main-font;
+        color: $white;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+
+      .slide-p-text {
+        font-family: $p-font;
+        font-size: 14px;
+        color: #ccc;
+        line-height: 16px;
+      }
+    }
+
+    .slide {
+      @extend .slider;
+      background: url('../../img/sprite.jpg');
+      background-position: 0 0;
+    }
+
+    .slide-1-2,
+    .slide-2-1,
+    .slide-3-3 {
+      background-position: -301px 0;
+    }
+
+    .slide-1-3,
+    .slide-2-2,
+    .slide-3-1 {
+      background-position: -602px 0;
+    }
+  }
+
+  .slider-1,
+  .slider-2 {
+    margin-right: 20px;
+  }
+}
