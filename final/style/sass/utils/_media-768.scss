@@ -1,0 +1,66 @@
+@media screen and (max-width: 940px) {
+  header,
+  .wrapper-content,
+  .footer-content {
+    width: 748px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  //
+  // WRAPPER
+  //
+  .wrapper-content {
+
+    .main-title {
+      margin-bottom: 35px;
+    }
+
+    .partners ul {
+      width: 482px;
+      margin: 0 auto;
+
+      .partner {
+        margin-right: 0;
+      }
+
+      .partner-1,
+      .partner-3 {
+        float: left;
+      }
+
+      .partner-2,
+      .partner-4 {
+        float: right;
+      }
+
+      .partner-2:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .partner-1,
+      .partner-2 {
+        margin-bottom: 60px;
+      }
+    }
+
+    //
+    // ACTIVITIES
+    //
+    .activities-links {
+      margin-bottom: -15px;
+
+      .activities-block {
+        width: 492px;
+      }
+
+      .short {
+        width: 236px;
+      }
+    }
+
+
+  }
+}

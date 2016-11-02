@@ -68,7 +68,28 @@ footer {
     float: none;
 
     .menu-link {
-      color: $grey;      
+      color: $grey;
     }
   }
+}
+
+
+@media screen and (max-width: 940px) {
+  .footer-content {
+
+    .footer-block {
+      margin-right: 25px;
+
+      &:first-child {
+        margin-left: 30px;
+        margin-right: 90px;
+      }
+
+      &:last-child {
+        margin-right: 30px;
+      }
+    }
+  }
+
+
 }

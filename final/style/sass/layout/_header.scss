@@ -72,3 +72,15 @@ header {
     padding: 0 18px;
   }
 }
+
+@media screen and (max-width: 940px) {
+
+  .header-logo {
+    padding-left: 40px;
+  }
+
+  .header-links {
+    padding-right: 40px;
+  }
+  
+}

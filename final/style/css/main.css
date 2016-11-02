@@ -44,65 +44,8 @@ header .find, .header-links a, .search-partners, .activities form button {
     float: left;
     width: 300px;
     height: 400px;
-    overflow: hidden; }
-    .sliders .slider .slider-arrows {
-      position: absolute;
-      z-index: 100;
-      top: 0;
-      left: 0;
-      margin-top: 153px; }
-      .sliders .slider .slider-arrows .arrow {
-        background: url(../../img/sprite.png);
-        margin-left: 20px;
-        width: 30px;
-        height: 55px;
-        cursor: pointer; }
-      .sliders .slider .slider-arrows .left-arrow {
-        background-position: -110px 0;
-        float: left; }
-      .sliders .slider .slider-arrows .right-arrow {
-        margin-left: 250px;
-        background-position: -141px 0; }
-    .sliders .slider .slider-text {
-      position: absolute;
-      display: table-cell;
-      z-index: 90;
-      top: 0;
-      left: 0;
-      width: 280px;
-      height: 400px;
-      padding-left: 20px;
-      border-radius: 5px;
-      background-image: linear-gradient(to top, rgba(51, 51, 51, 0.5) 10%, rgba(0, 0, 0, 0.1)); }
-      .sliders .slider .slider-text .slider-text-block {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 20px;
-        padding-right: 20px; }
-      .sliders .slider .slider-text .step {
-        display: block;
-        width: 41px;
-        margin-bottom: 15px;
-        line-height: 20px;
-        padding: 0 14px;
-        background: #ff4e50;
-        border-radius: 10px;
-        font-family: "Montserrat Regular";
-        font-size: 10px;
-        color: #fff;
-        letter-spacing: 1px;
-        text-transform: uppercase; }
-      .sliders .slider .slider-text .slide-title {
-        font-family: "Montserrat Bold";
-        color: #fff;
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 10px; }
-      .sliders .slider .slider-text .slide-p-text {
-        font-family: "Roboto Light";
-        font-size: 14px;
-        color: #ccc;
-        line-height: 16px; }
+    overflow: hidden;
+    border-radius: 5px; }
     .sliders .slider .slide {
       background: url("../../img/sprite.jpg");
       background-position: 0 0; }
@@ -118,6 +61,78 @@ header .find, .header-links a, .search-partners, .activities form button {
   .sliders .slider-2 {
     margin-right: 20px; }
 
+.slider-arrows {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  margin-top: 153px; }
+  .slider-arrows .arrow {
+    background: url("../../img/sprite.png");
+    margin-left: 20px;
+    width: 30px;
+    height: 55px;
+    cursor: pointer; }
+  .slider-arrows .left-arrow {
+    background-position: -110px 0;
+    float: left; }
+  .slider-arrows .right-arrow {
+    margin-left: 250px;
+    background-position: -141px 0; }
+
+.slider-text {
+  position: absolute;
+  display: table-cell;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 400px;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, rgba(51, 51, 51, 0.5) 10%, rgba(0, 0, 0, 0.1)); }
+  .slider-text .slider-text-block {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding-right: 20px; }
+    .slider-text .slider-text-block * {
+      padding-left: 20px; }
+    .slider-text .slider-text-block .step {
+      margin-left: 20px; }
+  .slider-text .step {
+    display: block;
+    width: 41px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    padding: 0 14px;
+    background: #ff4e50;
+    border-radius: 10px;
+    font-family: "Montserrat Regular";
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .slider-text .slide-title {
+    font-family: "Montserrat Bold";
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px; }
+  .slider-text .slide-p-text {
+    font-family: "Roboto Light";
+    font-size: 14px;
+    color: #ccc;
+    line-height: 16px; }
+
+@media screen and (max-width: 940px) {
+  .sliders .slider, .sliders .slider .slide, .sliders .slider .slide {
+    width: 236px; }
+    .sliders .slider .slider-text, .sliders .slider .slide .slider-text {
+      width: 236px; }
+    .sliders .slider .slider-arrows, .sliders .slider .slide .slider-arrows {
+      margin-top: 40px; }
+    .sliders .slider .right-arrow, .sliders .slider .slide .right-arrow {
+      margin-left: 185px; } }
 header {
   width: 940px;
   padding: 40px 0 235px 0;
@@ -172,6 +187,12 @@ header {
     border-radius: 30px;
     padding: 0 18px; }
 
+@media screen and (max-width: 940px) {
+  .header-logo {
+    padding-left: 40px; }
+
+  .header-links {
+    padding-right: 40px; } }
 footer {
   border-top: 4px solid #ff4e50;
   padding: 35px 0 30px 0; }
@@ -222,6 +243,14 @@ footer {
     .footer-content .menu .menu-link {
       color: #666666; }
 
+@media screen and (max-width: 940px) {
+  .footer-content .footer-block {
+    margin-right: 25px; }
+    .footer-content .footer-block:first-child {
+      margin-left: 30px;
+      margin-right: 90px; }
+    .footer-content .footer-block:last-child {
+      margin-right: 30px; } }
 html,
 body,
 .wrapper,
@@ -409,5 +438,40 @@ a {
     cursor: pointer; }
     .activities form button:hover {
       background: #ff3a3c; }
+
+@media screen and (max-width: 940px) {
+  header,
+  .wrapper-content,
+  .footer-content {
+    width: 748px;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .wrapper-content .main-title {
+    margin-bottom: 35px; }
+  .wrapper-content .partners ul {
+    width: 482px;
+    margin: 0 auto; }
+    .wrapper-content .partners ul .partner {
+      margin-right: 0; }
+    .wrapper-content .partners ul .partner-1,
+    .wrapper-content .partners ul .partner-3 {
+      float: left; }
+    .wrapper-content .partners ul .partner-2,
+    .wrapper-content .partners ul .partner-4 {
+      float: right; }
+    .wrapper-content .partners ul .partner-2:after {
+      content: '';
+      display: block;
+      clear: both; }
+    .wrapper-content .partners ul .partner-1,
+    .wrapper-content .partners ul .partner-2 {
+      margin-bottom: 60px; }
+  .wrapper-content .activities-links {
+    margin-bottom: -15px; }
+    .wrapper-content .activities-links .activities-block {
+      width: 492px; }
+    .wrapper-content .activities-links .short {
+      width: 236px; } }
 
 /*# sourceMappingURL=main.css.map */

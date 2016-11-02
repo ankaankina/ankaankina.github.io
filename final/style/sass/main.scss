@@ -1,8 +1,6 @@
 @import "utils/_fonts";
 @import "utils/_variables";
 @import "utils/_placeholders";
-@import "utils/_media-768";
-@import "utils/_media-320";
 
 @import "components/_slider";
 
@@ -303,3 +301,6 @@ a {
     }
   }
 }
+
+@import "utils/_media-768";
+@import "utils/_media-320";
