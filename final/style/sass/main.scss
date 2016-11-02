@@ -22,7 +22,7 @@ body {
 }
 
 html {
-  background: url('../../img/bg.jpg') center top no-repeat;
+  background: url('../../img/bg.jpg') center top no-repeat fixed;
 }
 
 a {
@@ -41,7 +41,7 @@ a {
   .main-title {
     @extend %main-title;
     text-align: center;
-    margin-top: 95px;
+    padding-top: 95px;
     margin-bottom: 40px;
   }
 }
