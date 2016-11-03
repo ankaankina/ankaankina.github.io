@@ -10,6 +10,11 @@
     overflow: hidden;
     border-radius: 5px;
 
+    .slider-list {
+      width: 600px;
+      position: relative;
+    }
+
     .slide {
       @extend .slider;
       background: url('../../img/sprite.jpg');
