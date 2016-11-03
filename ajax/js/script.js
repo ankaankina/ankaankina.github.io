@@ -2,7 +2,7 @@
   var request = new XMLHttpRequest();
 
   function getjson(word) {
-    request.open('GET', 'https://api.riffsy.com/v1/search?tag=hello%20world&key=' + word + '&limit=10');
+    request.open('GET', 'https://api.riffsy.com/v1/search?tag=' + word + '&key=LIVDSRZULELA&limit=10');
     request.onreaystatechange = function() {
       if (request.status === 200 && request.readyState === 4) {
         var resText = JSON.parse(request.responseText);
