@@ -5,7 +5,7 @@ function slider() {
   var rightUIEl = $('.arrowr-1');
   var elementsList = $('#slider_1');
 
-  var pixelOffset = 600;
+  var pixelOffset = 900;
   var currentLeftValue = 0;
   var elementsCount = elementsList.find('.slide').length;
   var minimumOffset = -((elementsCount - 5) * pixelOffset);

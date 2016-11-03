@@ -47,7 +47,7 @@ header .find, .header-links a, .search-partners, .activities form button {
     overflow: hidden;
     border-radius: 5px; }
     .sliders .slider .slider-list {
-      width: 600px;
+      width: 900px;
       position: relative; }
     .sliders .slider .slide {
       background: url("../../img/sprite.jpg");
