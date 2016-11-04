@@ -5,7 +5,20 @@ function init() {
   'use strict';
 
   // SLIDER
-  
+  $('#owl-example').owlCarousel({
+    navigation: true, // Show next and prev buttons
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    singleItem: true
+
+    // "singleItem:true" is a shortcut for:
+    // items : 1,
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+  });
+
 
 
 
@@ -42,13 +55,18 @@ function init() {
 
 
   //ACCORDION PANEL
-  $('.blog__container__panel__text-1').addClass('blog__active__text');
-  $('.blog__container__panels__block > input').on('click', function() {
+  (function panelOnStart() {
+    $('.blog__container__panel__text-1').addClass('blog__active__text');
+  })();
+
+  $('.blog__container__panels__block > input').on('click', changePanelMode);
+
+  function changePanelMode() {
     if ($(this.checked)) {
       $('.blog__container__panel__text').removeClass('blog__active__text');
       $(this).siblings('p.blog__container__panel__text').addClass('blog__active__text');
     }
-  });
+  };
 
 
 }

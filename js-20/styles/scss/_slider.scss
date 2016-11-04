@@ -1,0 +1,68 @@
+//SLIDER
+.slider {
+  width: $width;
+  height: 470px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__container {
+  width: 20000px;
+}
+
+.slider__container__item {
+  float: left;
+  height: 470px;
+  position: relative;
+}
+
+.slider__text {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  width: 308px;
+  height: 197px;
+  left: 0;
+  bottom: 0;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  font-size: 54px;
+  line-height: 52px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 20px;
+  background: url(../../img/bg.png);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.slider__text__yellow {
+  color: $yellow;
+}
+
+.slider__buttons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 100;
+  margin-left: -53px;
+  margin-bottom: 17px;
+}
+
+.slider__button {
+  float: left;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: white;
+  margin-right: 15px;
+}
+
+.slider__button__link {
+  display: block;
+  margin: 3px;
+  width: 9px;
+  height: 9px;
+  background: #001d1d;
+  display: none;
+}
