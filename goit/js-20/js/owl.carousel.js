@@ -2700,7 +2700,7 @@
 	Navigation.Defaults = {
 		nav: false,
 		navRewind: true,
-		navText: [ 'prev', 'next' ],
+		navText: false,
 		navSpeed: false,
 		navElement: 'div',
 		navContainer: false,
@@ -2710,10 +2710,10 @@
 		dotClass: 'owl-dot',
 		dotsClass: 'owl-dots',
 		dots: true,
-		dotsEach: false,
-		dotData: false,
+		dotsEach: true,
+		dotData: true,
 		dotsSpeed: false,
-		dotsContainer: false,
+		dotsContainer: true,
 		controlsClass: 'owl-controls'
 	}
 

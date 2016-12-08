@@ -1,15 +1,19 @@
-$(init);
+var slideLink = $('.slider__button__link');
 
+$(init);
 
 function init() {
   'use strict';
 
   // SLIDER
   $('#owl-example').owlCarousel({
-    navigation: true, // Show next and prev buttons
+    navigation: false, // Show next and prev buttons
+    pagination: true,  //Show pagination.
+    paginationNumbers: false,
     slideSpeed: 300,
     paginationSpeed: 400,
-    singleItem: true
+    dotsContainer: '.slider__buttons',
+    singleItem: true,
 
     // "singleItem:true" is a shortcut for:
     // items : 1,
@@ -18,9 +22,6 @@ function init() {
     // itemsTablet: false,
     // itemsMobile : false
   });
-
-
-
 
 
 
