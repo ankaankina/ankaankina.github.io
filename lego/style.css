@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	font-family: Verdana;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin: 0 auto;
+	width: 100%;
+}
+
+input {
+	display: none;
+}
+
+label {
+	display: inline-block;
+	padding: 10px 20px;
+	font-weight: 900;
+	background-color: #ccc;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+
+input:checked + label {
+	background-color: #a1a1a1;
+}
+
+.tab {
+	display: none;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.tab:after {
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+}
+
+#toggle-tab1:checked ~ #tab1 {
+	display: flex;
+}
+
+#toggle-tab2:checked ~ #tab2 {
+	display: block;
+}
+
+#toggle-tab3:checked ~ #tab3 {
+	display: block;
+}
+
+#tab1 {
+	max-width: 600px;
+	flex-flow: row wrap;
+}
+
+#tab2 {
+	max-width: 800px;
+}
+
+#tab1 div,
+#tab2 div {
+	width: 200px;
+	height: 120px;
+}
+
+#tab2 div {
+	float: left;
+}
+
+#tab3 {
+	max-width: 384px;
+}
+
+#tab3 div {
+	width: 64px;
+	height: 64px;
+	float: left;
+}
+
+.tab-block1 {
+	background-color: orange;
+}
+
+.tab-block2 {
+	background-color: tomato;
+}
+
+.tab-block3 {
+	background-color: gold;
+}
+
+#tab2-block4 {
+	background-color: goldenRod;
+}
+
+@media screen and (max-width: 799px) {
+	#tab2 #tab2-block1 {
+		float: none;
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 599px) {
+
+	#tab1-block2 {
+		order: 3;
+	}
+
+	#tab2 {
+		display: flex !important;
+		flex-flow: column;
+	}
+
+	#tab2 div {
+		float: none;
+	}
+
+	#tab2-block2 {
+		order: 4;
+	}
+
+	#tab2-block3 {
+		order: 2;
+	}
+
+	#tab2-block4 {
+		order: 3;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	#tab1-block1 {
+		order: 2;
+	}
+
+	#tab1-block3 {
+		order: 1;
+	}
+}
