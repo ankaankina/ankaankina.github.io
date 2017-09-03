@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    position: relative;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+:focus {
+    outline: none;
+}
+
+.center-align {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+$yellow: #ffe200;
+
+.select{
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 100%;
+    color: #cccccc;
+    vertical-align: middle;
+    text-align: left;
+    user-select: none;
+    -webkit-touch-callout: none;
+
+    .placeholder {
+        position: relative;
+        display: block;
+        background-color: #393d41;
+        z-index: 1;
+        padding: 1em;
+        border-radius: 2px;
+        cursor: pointer;
+        
+        &:hover{
+            background: darken(#393d41,2%);
+        }
+        
+        &:after{
+            position: absolute;
+            right: 1em;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+    }
+    
+    &.is-open{
+        .placeholder:after {
+            
+        }
+    
+        ul {
+            display: block;
+        }
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        background: #fff;
+        border-radius: 2px;
+        top: 100%;
+        left: 0;
+        list-style: none;
+        margin: 5px 0 0 0;
+        padding: 0;
+        z-index: 100;
+
+        li {
+            display: block;
+            text-align: left;
+            padding: 0.8em 1em 0.8em 1em;
+            color: #999;
+            cursor: pointer;
+
+            &:hover{
+                background: #4ebbf0;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.btn {
+    span {
+        position: relative;
+        
+        &:after {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background: $yellow;
+            opacity: 0;
+            transition: .3s linear;
+            content: "";
+        }
+    }
+    
+    &:hover span:after {
+        opacity: 1;
+    }
+}

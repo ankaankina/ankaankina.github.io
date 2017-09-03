@@ -1,0 +1,309 @@
+$grey: #F0F0F0;
+
+.video-single {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .videos-top {
+        width: 100%;
+    }
+}
+
+.video-wrap {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: 0 auto;
+    position: relative;
+
+    iframe {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.progress-bar {
+    height: 30px;
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    z-index: 3;
+    cursor: pointer;
+    transition: opacity .3s, visibility .3s;
+    opacity: 0;
+    visibility: hidden;
+
+    .video-wrap.is-playing & {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:before {
+        width: 100%;
+        height: 8px;
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+        background: white;
+        content: "";
+    }
+
+    .progress {
+        content: "";
+        background: $grey;
+        position: absolute;
+        bottom: 8px;
+        right: 100%;
+        height: 8px;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .progress-tooltip {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: $grey;
+        position: absolute;
+        right: -10px;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        bottom: -7px;
+        opacity: 0;
+        -webkit-transition: .3s linear;
+        transition: .3s linear;
+        display: none;
+    }
+
+    .tooltip-body {
+        position: absolute;
+        bottom: 100%;
+        display: inline-block;
+        background: $grey;
+        width: 80px;
+        text-align: center;
+        margin: 0 0 10px -29px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 16px;
+
+
+    }
+}
+
+.video-wrap:hover .progress-tooltip {
+    opacity: 1;
+}
+
+.screen-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 84px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    overflow: hidden;
+    z-index: 3;
+    cursor: pointer;
+
+    .close-fullscreen {
+        display: none;
+    }
+
+    &:after {
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+        width: 100%;
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        height: 2px;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        z-index: 9;
+    }
+
+    &:hover:after {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+.state-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 24px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    overflow: hidden;
+    z-index: 3;
+
+    &:after {
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+        width: 100%;
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        height: 2px;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        z-index: 9;
+    }
+
+    &:hover:after {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    div {
+        @extend .center-align;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .play {
+        &:before {
+            @extend .center-align;
+            display: block;
+            width: 0;
+            height: 0;
+            background: white;
+            content: "";
+            border: 12px solid black;
+            border-width: 8px 0px 8px 11px;
+            border-color: transparent transparent transparent black;
+            -webkit-transform: translateX(2px);
+            -ms-transform: translateX(2px);
+            transform: translateX(2px);
+        }
+    }
+
+    .pause {
+        display: none;
+
+        &:after,
+        &:before {
+            @extend .center-align;
+            width: 4px;
+            height: 12px;
+            background: black;
+            content: "";
+            display: block;
+        }
+
+        &:after {
+            -webkit-transform: translateX(3px);
+            -ms-transform: translateX(3px);
+            transform: translateX(3px);
+        }
+
+        &:before {
+            -webkit-transform: translateX(-3px);
+            -ms-transform: translateX(-3px);
+            transform: translateX(-3px);
+        }
+    }
+}
+
+.video-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.video-switcher {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 9;
+    width: 50px;
+
+    &>span {
+        display: block;
+        cursor: pointer;
+        height: 50px;
+    }
+
+    .num-box {
+        display: block;
+        background: black;
+        height: 50px;
+        font-size: 0;
+
+        &>span {
+            @extend .center-align;
+            width: 2px;
+            height: 30px;
+            background: white;
+            display: block;
+            content: "";
+        }
+    }
+
+    .num-current,
+    .num-size {
+        font-size: 16px;
+        color: $grey;
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+
+        span {
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+    }
+
+    .current-wrap {
+        -webkit-transition: .3s linear;
+        transition: .3s linear;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .state-controls {
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        bottom: 17px;
+    }
+
+    .screen-controls {
+        display: none;
+    }
+}

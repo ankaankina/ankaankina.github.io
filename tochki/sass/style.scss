@@ -1,0 +1,55 @@
+@import "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: "Proxima";
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+b {
+    font-weight: 600;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .section-container {
+        height: auto;
+    }
+}
+
+@import "general";
+@import "first-section";
+@import "second-section";
+@import "third-section";
+@import "fifth-section";
+@import "sixth-section";
+@import "seventh-section";
+@import "footer";
+@import "player";
+@import "animations";
+@import "small-height";
