@@ -125,7 +125,7 @@ input:checked + label {
 		order: 3;
 	}
 
-	#tab2 {
+	#toggle-tab2:checked ~ #tab2 {
 		display: flex !important;
 		flex-flow: column;
 	}
