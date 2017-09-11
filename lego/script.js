@@ -1,3 +1,8 @@
+'use strict';
+
+// document.addEventListener('DOMContentLoaded', onDocReady());
+// function onDocReady() {}
+
 var container = document.getElementById('tab3'),
 	blocks = legolize(55, ['tab-block1', 'tab-block2', 'tab-block3']).join('');
 container.innerHTML = blocks;
@@ -28,10 +33,9 @@ var col = 0,
 	row = 0;
 
 for (var i = 0; i < boxes.lenght; i++) {
-	boxes[i].style.left = (col * blockWidth) + 'px';
-	boxes[i].style.top = (row * blockHeight) + 'px';
+	col = boxes[i].offsetLeft / blockWidth;
 
-	if (++col >= columns) {
+	if (col >= columns) {
 		col = 0;
 		row++;
 	}
