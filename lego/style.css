@@ -82,12 +82,12 @@ input:checked + label {
 }
 
 #tab3 {
-	max-width: 384px;
+	max-width: calc(10 * 65px);
 }
 
 #tab3 div {
-	width: 64px;
-	height: 64px;
+	width: 65px;
+	height: 65px;
 	float: left;
 	box-sizing: border-box;
 }

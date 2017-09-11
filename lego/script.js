@@ -1,5 +1,5 @@
 var container = document.getElementById('tab3'),
-	blocks = legolize(55, ['tab-block1', 'tab-block2', 'tab-block3']).join('');
+	blocks = legolize(85, ['tab-block1', 'tab-block2', 'tab-block3']).join('');
 container.innerHTML = blocks;
 
 var boxes = container.getElementsByTagName('*'),
