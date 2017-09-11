@@ -89,6 +89,7 @@ input:checked + label {
 	width: 64px;
 	height: 64px;
 	float: left;
+	box-sizing: border-box;
 }
 
 .tab-block1 {
@@ -101,6 +102,10 @@ input:checked + label {
 
 .tab-block3 {
 	background-color: gold;
+}
+
+.more-than-2 {
+	background-color: DarkGoldenRod;
 }
 
 #tab2-block4 {

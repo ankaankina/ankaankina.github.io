@@ -7,7 +7,10 @@ var boxes = container.getElementsByTagName('*'),
 	blockHeight = boxes[0].clientHeight,
 	containerWidth = boxes[0].parentElement.clientWidth,
 
-	columns = Math.floor(containerWidth / blockWidth);
+	columns = Math.floor(containerWidth / blockWidth),
+	rows = 0,
+	classCounter = [],
+	prevBoxClass, boxClass;
 	console.log('columns: ' + columns);
 
 function legolize(count, classes) {
@@ -24,16 +27,29 @@ function legolize(count, classes) {
 	return randomClasses(count, classes).map(x => '<div class="' + x + '"></div>');
 }
 
-var col = 0,
-	row = 0;
 
-for (var i = 0; i < boxes.lenght; i++) {
-	col = boxes[i].offsetLeft / blockWidth;
+for (var i = 0; i < boxes.length; i++) {
+	boxClass = boxes[i].className;
 
-	if (col >= columns) {
-		col = 0;
-		row++;
+	if (boxes[i].previousSibling) prevBoxClass = boxes[i].previousSibling.className;
+	if (boxClass === prevBoxClass) {
+		classCounter.push(boxes[i]);
+	} else {
+		classCounter = [boxes[i]];
 	}
-}
 
-console.log('rows: ' + row);
+	if (i % columns === 0) {
+		rows++;
+		classCounter = [boxes[i]];
+		console.log('row ' + rows);
+	}
+
+	if (classCounter.length >= 3) {
+		for (j = 0; j < classCounter.length; j++) {
+			classCounter[j].className += " more-than-2";
+		}
+	}
+
+	console.log(i + ': ' + classCounter);
+}
+console.log('rows: ' + rows);
